@@ -1,0 +1,86 @@
+.contenedor {
+    display:grid;
+    width: 90%;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+                        "header         header           header"
+                        "main           main             main"
+                        "sectionUno     sectionUno       sectionUno"
+                        "sectionDos     sectionDos       sectionDos"
+                        "sectionTres    sectionTres      sectionTres"
+                        "sectionCuatro  sectionCuatro    sectionCuatro"
+                        "tablaInfo      tablaInfo        tablaInfo"
+                        "none           footer           none";
+}
+.contenedor {
+    .header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .main {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .sectionUno {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .sectionDos {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    .sectionTres {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+    .sectionCuatro {
+        grid-column: 1/4;
+        grid-row: 6/7;
+    }
+    .tablaInfo {
+        grid-column: 1/4;
+        grid-row: 7/8;
+    }
+    .footer {
+        grid-column: 1/4;
+        grid-row: 8/9;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .contenedor {
+        .header {
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .main {
+            grid-column: 1/4;
+            grid-row: 2/3;
+        }
+        .sectionUno {
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .sectionDos {
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .sectionTres {
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .sectionCuatro {
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .tablaInfo {
+            grid-column: 2/4;
+            grid-row: 7/8;
+        }
+        .footer {
+            grid-column: 2/3;
+            grid-row: 8/9;
+        }
+    }
+}

@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #7a7265;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif; }
+
+.header__name {
+  color: #7a7265;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center; }
+
+.header__encabezado {
+  color: white;
+  font-size: 20px;
+  height: 60%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  background-color: #c0b7b1;
+  border: solid 4px #433e3f;
+  text-align: center;
+  margin: 5px 5px; }
+
+.header__fisiatria {
+  color: #433e3f;
+  background-color: #c0b7b1;
+  font-family: "Montserrat", sans-serif;
+  font-style: bolder;
+  text-align: center;
+  margin: 5px 5px; }
+
+#header__carouselExampleControls {
+  width: 320px;
+  justify-content: center; }
+
+.header__container {
+  width: 100%; }
+
+.separarTitulos {
+  margin: 5px 0; }
+
+.header__nav {
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 0%;
+  display: flex;
+  justify-content: space-between; }
+
+.header__se-esconde {
+  display: none;
+  list-style: none; }
+
+.header__para-desplegar:hover .se-esconde {
+  display: block; }
+
+h2 {
+  color: white;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  margin-top: 40px;
+  padding: 15px 15px;
+  width: 200%/2;
+  text-align: center;
+  background-color: #c0b7b1; }
+
+.sectionUno__bienvenida--modifier {
+  color: #433e3f;
+  background-color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 10px 0; }
+
+h3 {
+  color: #433e3f;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px; }
+
+.main__padreFlex {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.main__hijoFlex {
+  display: flex;
+  flex-direction: column; }
+
+.wow img:hover {
+  transform: scale(2, 2); }
+
+p {
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px; }
+
+h4 {
+  color: #433e3f;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif; }
+
+.padreServ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.hijoServ {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.bordesRedondeados {
+  text-align: center;
+  width: 1400px/2;
+  padding: 5%; }
+
+.sectionUno__form-academica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  list-style: none; }
+
+.sectionUno__titulosQuien {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px; }
+
+.sectionUno__nombreQuienSoy {
+  color: #c0b7b1;
+  font-size: 25px;
+  font-style: oblique;
+  font-weight: bolder; }
+
+.sectionUno__formDos {
+  font-size: 30px;
+  margin: 15px 0; }
+
+.fotoCuatro {
+  border-radius: 200px;
+  width: 300px; }
+
+.boton {
+  font-size: 1rem;
+  padding: 2rem; }
+
+a.noves {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #433e3f; }
+
+.form {
+  font-family: "Montserrat", sans-serif;
+  color: #433e3f; }
+
+.tabla {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #433e3f; }
+
+.colorTabla {
+  color: #433e3f;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif; }
+
+#testimonios {
+  max-width: 100%; }
+
+.relleno {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #433e3f; }
+
+.pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #433e3f;
+  text-align: center;
+  text-decoration: none;
+  list-style: none; }
+
+.logo {
+  vertical-align: middle;
+  border-style: none; }
+
+@media (min-width: 768px) {
+  .header__encabezado {
+    font-size: 40px; } }
+
+@media (min-width: 768px) {
+  #header__carouselExampleControls {
+    width: 700px;
+    margin: 0 auto;
+    margin-left: 20%; } }
+
+@media (min-width: 768px) {
+  .main__padreFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%; }
+  .main__hijoFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%; } }
+
+@media (min-width: 768px) {
+  .wow img {
+    padding: 10px; } }
+
+@media (min-width: 768px) {
+  p {
+    padding: auto; } }
+
+@media (min-width: 768px) {
+  .padreServ {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .hijoServ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; } }
+
+@media (min-width: 768px) {
+  .sectionUno__form-academica {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; } }
+
+@media (min-width: 768px) {
+  ul li {
+    padding: auto; } }
+
+@media (min-width: 768px) {
+  .pie {
+    flex-direction: row; } }
+
+.header__nav a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none; }
+
+h4 .main__hijoFlex {
+  margin-bottom: 20px; }
+  h4 .main__hijoFlex p {
+    margin-top: 15px; }
+
+.padreServ h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+ul.nosotros li {
+  list-style: none;
+  text-align: center;
+  font-size: 15px;
+  display: block; }
+
+ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 20px;
+  padding: 0px; }
+  ul li a {
+    font-size: 15px; }
+
+.pie li {
+  margin-bottom: 20px; }
+  .pie li .instagram {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #433e3f;
+    align-items: center;
+    font-size: 15px; }
+
+.contenedor {
+  display: grid;
+  width: 90%;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: "header         header           header" "main           main             main" "sectionUno     sectionUno       sectionUno" "sectionDos     sectionDos       sectionDos" "sectionTres    sectionTres      sectionTres" "sectionCuatro  sectionCuatro    sectionCuatro" "tablaInfo      tablaInfo        tablaInfo" "none           footer           none"; }
+
+.contenedor .header {
+  grid-column: 1/4;
+  grid-row: 1/2; }
+
+.contenedor .main {
+  grid-column: 1/4;
+  grid-row: 2/3; }
+
+.contenedor .sectionUno {
+  grid-column: 1/4;
+  grid-row: 3/4; }
+
+.contenedor .sectionDos {
+  grid-column: 1/4;
+  grid-row: 4/5; }
+
+.contenedor .sectionTres {
+  grid-column: 1/4;
+  grid-row: 5/6; }
+
+.contenedor .sectionCuatro {
+  grid-column: 1/4;
+  grid-row: 6/7; }
+
+.contenedor .tablaInfo {
+  grid-column: 1/4;
+  grid-row: 7/8; }
+
+.contenedor .footer {
+  grid-column: 1/4;
+  grid-row: 8/9; }
+
+@media only screen and (min-width: 768px) {
+  .contenedor .header {
+    grid-column: 1/4;
+    grid-row: 1/2; }
+  .contenedor .main {
+    grid-column: 1/4;
+    grid-row: 2/3; }
+  .contenedor .sectionUno {
+    grid-column: 1/4;
+    grid-row: 3/4; }
+  .contenedor .sectionDos {
+    grid-column: 1/4;
+    grid-row: 3/4; }
+  .contenedor .sectionTres {
+    grid-column: 1/4;
+    grid-row: 3/4; }
+  .contenedor .sectionCuatro {
+    grid-column: 1/4;
+    grid-row: 3/4; }
+  .contenedor .tablaInfo {
+    grid-column: 2/4;
+    grid-row: 7/8; }
+  .contenedor .footer {
+    grid-column: 2/3;
+    grid-row: 8/9; } }
