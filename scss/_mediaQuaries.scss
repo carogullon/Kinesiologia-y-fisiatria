@@ -3,6 +3,13 @@
         font-size: 40px;
     }
 }
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
 @media  (min-width: 768px) {
     #carouselExampleDark {
         width:100%;

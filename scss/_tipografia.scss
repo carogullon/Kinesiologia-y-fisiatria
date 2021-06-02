@@ -5,8 +5,8 @@
 }
 /* alineacion y margin al body */
 body {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
 }
 .btn-wsp{
@@ -49,6 +49,7 @@ a {
     font-size: 0%;
     display: flex;
     justify-content: space-between;
+    text-align: right;
 }
 .header__se-esconde {
     display: none;
@@ -174,7 +175,7 @@ p {
     margin-top: 40px;
 }
 .sectionUno__nombreQuienSoy {
-    color: $color-fondo;
+    color: $color-verde;
     font-size: 25px;
     font-style: oblique;
     font-weight: bolder;
