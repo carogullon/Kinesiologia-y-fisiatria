@@ -11,6 +11,10 @@
         color: $color-verde;
         font-size: 60px;
         background-color:white;
+        margin-top: 20px;
+    }
+    .fisiatria {
+        color: $color-greyDos;
     }
 }
 h4 {
@@ -60,15 +64,14 @@ ul {
 .pie {
     li {
         margin-bottom: 20px;
-        .instagram {
-            text-decoration: none;
-            font-family: $fuente;
-            color: $color-greyDos;
-            align-items: center;
-            font-size: 15px;
-        } 
+        text-decoration: none;
+        font-family: $fuente;
+        color: $color-greyDos;
+        align-items: center;
+        font-size: 25px;
     }
 }
+
 
 
 
