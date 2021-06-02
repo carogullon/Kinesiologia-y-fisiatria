@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link href = "https://fonts.googleapis.com/css2? family = Montserrat & display = swap" rel = "hoja de estilo ">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/whatsapp?style=brands">
     <script src="https://kit.fontawesome.com/c8bfb8fcf1.js" crossorigin="anonymous"></script>
     <title>Kinesiología y Fisiatría - RPG</title>
 </head>
@@ -42,7 +45,7 @@
                             <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contáctenos</a>
+                            <a class="nav-link" href="contacto.html">Contáctame</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="novedades.html">Novedades</a>
@@ -57,28 +60,47 @@
 
                  <!-- empieza el titulo -->
                 <h1 class="header__name">Carolina Gullón</h1>
-                <h2 class="header__encabezado">KINESIOLOGÍA Y <span class="header__fisiatria">FISIATRÍA</span></h2>
-                    <div id="header__carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/caminar-correr.jpg" class="d-block w-100" alt="persona-corriendo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/aktives-stretching-fizkes.png" class="d-block w-100" alt="persona-estirando">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/rieducazione-posturale-metodo-souchard.jpg" class="d-block w-100" alt="terapia-manual">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                <h2 class="encabezado">kinesiología <span class="fisiatria"> y fisiatría</span></h2>
+                
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/woman-567021_1920.jpg" class="d-block w-100" alt="terapia-manual">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5><strong>RPG®</strong></h5>
+                          <p><strong>Reeducación Postural Global - terapia manual personalizada.</strong></p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/yoga-2959226_1920.jpg" class="d-block w-100" alt="chica-estirando">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5><strong>STRETCHING & MOBILITY</strong></h5>
+                          <p><strong>Clases individuales y/o grupales de flexibilidad, movilidad y estiramiento.</strong></p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/running-6252827_1920.jpg" class="d-block w-100" alt="chica-corriendo">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5><strong>KINESIOLOGÍA DEPORTIVA</strong></h5>
+                          <p><strong>Prevención y rehabilitación de lesiones deportivas.</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
                     <!-- Termina el titulo -->
             </div>
         </header>
@@ -86,7 +108,7 @@
 
     <!-- Empieza sección quienes somos -->  
     <section class="sectionUno">
-        <h2 class="sectionUno__bienvenida--modifier">BIENVENIDOS</h2>
+        <h2 class="sectionUno__bienvenida--modifier">bienestar, salud y deporte</h2>
         <h2 class="separarTitulos primerTitulo">¿QUIEN SOY?</h2>       
 
             <div class="sectionUno__form-academica">
@@ -244,11 +266,11 @@
         <footer class="footer">
             <h2 class="separarTitulos">NUESTRAS REDES SOCIALES</h2>
             <ul class="pie">
-                <li><a class="instagram" href="https://www.instagram.com/kinesiologia.carogullon/" target="_blank">Instagram.com/kinesiologia.carogullon</a></li>
-                <li>WhatsApp:2494465819</li>
-                <li>gulloncarolina@gmail.com</li>
+                <li><i class="fab fa-instagram"> <a class="instagram" href="https://www.instagram.com/kinesiologia.carogullon/" target="_blank">Instagram.com/kinesiologia.carogullon</a></i></li>
+                <li><i class="fab fa-whatsapp"> 2494465819</i></li>
+                <li><i class="fas fa-envelope"> gulloncarolina@gmail.com</i></li>
             </ul>
-            <img src="images/logo2.jpg" alt="logo" class="logo" width="150px">
+            <img src="images/logo2.jpg" alt="logo" class="logo" width="100px">
         </footer>
         <!-- Termina el footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

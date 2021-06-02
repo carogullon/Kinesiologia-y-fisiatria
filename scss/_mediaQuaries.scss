@@ -3,12 +3,21 @@
         font-size: 40px;
     }
 }
-@media (min-width: 768px) {
-    #header__carouselExampleControls {
-        width:700px;
+@media  (min-width: 768px) {
+    #carouselExampleDark {
+        width:100%;
         margin: 0 auto;
-        margin-left: 20%;
-    }    
+    }
+}
+@media (min-width: 380px) {
+    .sectionUno__bienvenida--modifier {
+        font-size: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .sectionUno__bienvenida--modifier {
+        font-size:50px;
+    }
 }
 @media (min-width: 768px) {
     .main__padreFlex {
@@ -29,6 +38,7 @@
         padding: 10px;
     }
 }
+
 @media (min-width: 768px) {
     p {
         padding:auto;

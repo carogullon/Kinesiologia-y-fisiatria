@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+/* alineacion y margin al body */
 body {
     margin-left: 20px;
     margin-right: 20px;
@@ -16,45 +18,9 @@ a {
     font-size: 20px;
     font-family: $fuente;
 }
-.header__name {
-    color:$color-grey;
-    font-size: 35px;
-    font-family: $fuente;
-    font-weight: bolder;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    text-align: center;
-}
-.header__encabezado {
-    color: white;
-    font-size: 20px;
-    height: 60%;
-    font-family:$fuente;
-    font-weight:bolder;
-    background-color:$color-fondo;
-    border: solid 4px $color-greyDos;
-    text-align: center;
-    margin: 5px 5px;
-}
-.header__fisiatria {
-    color:$color-greyDos;
-    background-color: $color-fondo;
-    font-family:$fuente;
-    font-style: bolder;
-    text-align: center;
-    margin: 5px 5px;
-}
-#header__carouselExampleControls {
-    width: 320px;
-    justify-content: center;
-}
-.header__container {
-    width: 100%;
-}
-.separarTitulos {
-    margin: 5px 0;
-}
+/* empiezan estilos al header */
+
+/* empieza nav */
 .header__nav {
     padding: 5px;
     margin: 0 auto;
@@ -70,6 +36,25 @@ a {
 .header__para-desplegar:hover .se-esconde {
      display: block;
 }
+/* termina nav */
+
+
+.header__name {
+    color:$color-grey;
+    font-size: 25px;
+    font-family: $fuente;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.header__container {
+    width: 100%;
+}
+/* Termina estilos al header */
+
+/* estilo general a los h2, h3 y h4 */
 h2 {
     color: white;
     font-size: 12.5px*2;
@@ -81,22 +66,34 @@ h2 {
     text-align: center;
     background-color: $color-fondo;
 }
-.sectionUno__bienvenida--modifier {
-    color:$color-greyDos;
-    background-color: white;
-    font-size: 50px;
-    font-weight: bolder;
-    margin: 10px 0;
-}
+
 h3 {
     color:$color-greyDos;
     font-size: 20px;
     font-family: $fuente;
     margin:10px;
-
 }
+h4 {
+    color: $color-greyDos;
+    font-size: 20px;
+    font-family: $fuente;
+}
+
+/* estilos a sectionUno */
+.separarTitulos {
+    margin: 5px 0;
+}
+.sectionUno__bienvenida--modifier {
+    color:$color-greyDos;
+    background-color: white;
+    font-weight: bolder;
+    margin: 10px 0;
+    font-family: $fuenteDos;
+}
+
+/* estilos a servicios del index */
 .main__padreFlex{
-    display: flex;
+   display: flex;
     flex-direction: column;
     width: 100%;
 }
@@ -112,11 +109,8 @@ p {
     font-family:$fuente;
     padding: 10px;
 }
-h4 {
-    color: $color-greyDos;
-    font-size: 20px;
-    font-family: $fuente;
-}
+/* estilos a servicios en la section correspondiente */
+
 .padreServ {
     display:flex;
     flex-direction: column;
@@ -133,6 +127,14 @@ h4 {
     width: 1400px/2;
     padding: 5%;
 }
+.tituloServ {
+    font-size: 25px;
+    font-family: $fuenteDos;
+}
+
+
+/*estilo a la section de quien soy */
+
 .sectionUno__form-academica {
     display: flex; 
     flex-direction: column;
@@ -160,6 +162,7 @@ h4 {
     margin: 15px 0;
 }
 
+/*foto mia */
 .fotoCuatro {
     border-radius: 200px;
     width: 300px; 
@@ -168,12 +171,17 @@ h4 {
     font-size: 1rem;
     padding: 2rem;
 }
+
+/*estilo seccion novedades */
+
 a.noves{
     text-decoration: none;
     font-size: 20px;
     font-family: $fuente;
     color:$color-greyDos;
 }
+
+/*formulario y tabla */
 .form {
     font-family: $fuente;
     color:$color-greyDos;
@@ -189,24 +197,29 @@ a.noves{
     font-size: 25px;
     font-family:$fuente;
 }
-#testimonios {
-    max-width: 100%;
-}
 .relleno {
     font-family: $fuente;
     font-size: 15px;
     color:$color-greyDos;
 }
+/* testiomonios de pacientes */
+#testimonios {
+    max-width: 100%;
+}
+/* todo lo que esta en el pie */
 .pie {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-family:$fuente;
-    font-size: 15px;
+    font-size: 20px;
     color: $color-greyDos;
     text-align: center;
     text-decoration: none;
     list-style: none;
+}
+.instragram {
+    font-size: 20px;
 }
 .logo {
     vertical-align: middle;
