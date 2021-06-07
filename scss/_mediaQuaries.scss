@@ -78,8 +78,11 @@
     }
 }
 @media (min-width: 768px) {
-    .pie {
-        flex-direction: row;
-    }
+    .contenedorFooter {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-around;
+    } 
 }
 

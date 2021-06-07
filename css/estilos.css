@@ -44,24 +44,12 @@ a {
   font-size: 20px;
   font-family: "Montserrat", sans-serif; }
 
+i {
+  font-size: 30px;
+  font-style: "Montserrat", sans-serif;
+  color: white; }
+
 /* empiezan estilos al header */
-/* empieza nav */
-.header__nav {
-  padding: 5px;
-  margin: 0 auto;
-  font-size: 0%;
-  display: flex;
-  justify-content: space-between;
-  text-align: right; }
-
-.header__se-esconde {
-  display: none;
-  list-style: none; }
-
-.header__para-desplegar:hover .se-esconde {
-  display: block; }
-
-/* termina nav */
 .header__name {
   color: #7a7265;
   font-size: 25px;
@@ -99,6 +87,7 @@ h4 {
   font-size: 20px;
   font-family: "Montserrat", sans-serif; }
 
+/* termina estilo general a los h2, h3 y h4 */
 /* estilos a sectionUno */
 .separarTitulos {
   margin: 5px 0; }
@@ -110,6 +99,7 @@ h4 {
   margin: 10px 0;
   font-family: "Mate SC", serif; }
 
+/* termina estilos a sectionUno */
 /* estilos a servicios del index */
 .main__padreFlex {
   display: flex;
@@ -128,6 +118,7 @@ p {
   font-family: "Montserrat", sans-serif;
   padding: 10px; }
 
+/* termina estilos a servicios del index */
 /* estilos a servicios en la section correspondiente */
 .padreServ {
   display: flex;
@@ -149,7 +140,8 @@ p {
   font-size: 25px;
   font-family: "Mate SC", serif; }
 
-/*estilo a la section de quien soy */
+/* termina estilos a servicios en la section correspondiente */
+/*estilo a la section de sobre mi */
 .sectionUno__form-academica {
   display: flex;
   flex-direction: column;
@@ -176,11 +168,11 @@ p {
   font-size: 30px;
   margin: 15px 0; }
 
-/*foto mia */
 .fotoCuatro {
   border-radius: 200px;
   width: 300px; }
 
+/*termina estilo a la section de sobre mi */
 .boton {
   font-size: 1rem;
   padding: 2rem; }
@@ -192,37 +184,25 @@ a.noves {
   font-family: "Montserrat", sans-serif;
   color: #433e3f; }
 
-/*formulario y tabla */
+/*termina estilo seccion novedades */
+/*formulario */
 .form {
   font-family: "Montserrat", sans-serif;
   color: #433e3f; }
 
-.tabla {
+.fuente-icono {
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  color: #433e3f; }
-
-.colorTabla {
-  color: #433e3f;
-  font-weight: bold;
-  font-size: 25px;
-  font-family: "Montserrat", sans-serif; }
-
-.relleno {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  color: #433e3f; }
+  color: white; }
 
 /* testiomonios de pacientes */
 #testimonios {
   max-width: 100%; }
 
 /* todo lo que esta en el pie */
-.pie {
+.social-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
-  font-family: "Montserrat", sans-serif;
   color: #433e3f;
   text-align: center;
   text-decoration: none;
@@ -232,6 +212,7 @@ a.noves {
   vertical-align: middle;
   border-style: none; }
 
+/*termina todo lo que esta en el pie */
 @media (min-width: 768px) {
   .header__encabezado {
     font-size: 40px; } }
@@ -298,13 +279,11 @@ a.noves {
     padding: auto; } }
 
 @media (min-width: 768px) {
-  .pie {
-    flex-direction: row; } }
-
-.header__nav a {
-  display: flex;
-  text-align: right;
-  text-decoration: none; }
+  .contenedorFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; } }
 
 .header__container .encabezado {
   font-family: "Satisfy", cursive;
@@ -315,6 +294,11 @@ a.noves {
 
 .header__container .fisiatria {
   color: #433e3f; }
+
+.header__container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; }
 
 h4 .main__hijoFlex {
   margin-bottom: 20px; }
@@ -345,78 +329,56 @@ ul li {
 .novesLista li {
   padding: 0%;
   font-size: 18px;
-  text-align: inherit; }
+  text-align: inherit;
+  margin-bottom: 15px; }
 
-.pie li {
-  margin-bottom: 20px;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  color: #433e3f;
-  align-items: center;
-  font-size: 25px; }
+.footer .contenedorFooter {
+  background-color: #acb622;
+  padding: 30px; }
+  .footer .contenedorFooter .social-icons li {
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 25px; }
+  .footer .contenedorFooter .infoFooter {
+    color: white; }
 
 .contenedor {
   display: grid;
   width: 90%;
   grid-gap: 15px;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(8, auto);
-  grid-template-areas: "header         header           header" "main           main             main" "sectionUno     sectionUno       sectionUno" "sectionDos     sectionDos       sectionDos" "sectionTres    sectionTres      sectionTres" "sectionCuatro  sectionCuatro    sectionCuatro" "tablaInfo      tablaInfo        tablaInfo" "none           footer           none"; }
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header         header           header" "sectionUno     sectionUno       sectionUno" "main           main             main" "footer           footer         footer"; }
 
 .contenedor .header {
   grid-column: 1/4;
   grid-row: 1/2; }
 
-.contenedor .main {
+.contenedor .sectionUno {
   grid-column: 1/4;
   grid-row: 2/3; }
 
-.contenedor .sectionUno {
+.contenedor .main {
   grid-column: 1/4;
   grid-row: 3/4; }
 
-.contenedor .sectionDos {
-  grid-column: 1/4;
-  grid-row: 4/5; }
-
-.contenedor .sectionTres {
-  grid-column: 1/4;
-  grid-row: 5/6; }
-
-.contenedor .sectionCuatro {
-  grid-column: 1/4;
-  grid-row: 6/7; }
-
-.contenedor .tablaInfo {
-  grid-column: 1/4;
-  grid-row: 7/8; }
-
 .contenedor .footer {
   grid-column: 1/4;
-  grid-row: 8/9; }
+  grid-row: 4/5; }
 
 @media only screen and (min-width: 768px) {
   .contenedor .header {
     grid-column: 1/4;
     grid-row: 1/2; }
-  .contenedor .main {
-    grid-column: 1/4;
-    grid-row: 2/3; }
   .contenedor .sectionUno {
     grid-column: 1/4;
-    grid-row: 3/4; }
-  .contenedor .sectionDos {
+    grid-row: 2/3; }
+  .contenedor .main {
     grid-column: 1/4;
     grid-row: 3/4; }
-  .contenedor .sectionTres {
-    grid-column: 1/4;
-    grid-row: 3/4; }
-  .contenedor .sectionCuatro {
-    grid-column: 1/4;
-    grid-row: 3/4; }
-  .contenedor .tablaInfo {
-    grid-column: 2/4;
-    grid-row: 7/8; }
   .contenedor .footer {
-    grid-column: 2/3;
-    grid-row: 8/9; } }
+    grid-column: 1/4;
+    grid-row: 4/5; } }

@@ -40,28 +40,12 @@ a {
     font-size: 20px;
     font-family: $fuente;
 }
+i {
+    font-size:30px;
+    font-style: $fuente;
+    color: white;
+}
 /* empiezan estilos al header */
-
-/* empieza nav */
-.header__nav {
-    padding: 5px;
-    margin: 0 auto;
-    font-size: 0%;
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
-}
-.header__se-esconde {
-    display: none;
-    list-style: none;
-    
-}
-.header__para-desplegar:hover .se-esconde {
-     display: block;
-}
-/* termina nav */
-
-
 .header__name {
     color:$color-grey;
     font-size: 25px;
@@ -101,6 +85,7 @@ h4 {
     font-size: 20px;
     font-family: $fuente;
 }
+/* termina estilo general a los h2, h3 y h4 */
 
 /* estilos a sectionUno */
 .separarTitulos {
@@ -113,6 +98,7 @@ h4 {
     margin: 10px 0;
     font-family: $fuenteDos;
 }
+/* termina estilos a sectionUno */
 
 /* estilos a servicios del index */
 .main__padreFlex{
@@ -132,6 +118,8 @@ p {
     font-family:$fuente;
     padding: 10px;
 }
+/* termina estilos a servicios del index */
+
 /* estilos a servicios en la section correspondiente */
 
 .padreServ {
@@ -154,9 +142,9 @@ p {
     font-size: 25px;
     font-family: $fuenteDos;
 }
+/* termina estilos a servicios en la section correspondiente */
 
-
-/*estilo a la section de quien soy */
+/*estilo a la section de sobre mi */
 
 .sectionUno__form-academica {
     display: flex; 
@@ -184,12 +172,13 @@ p {
     font-size: 30px;
     margin: 15px 0;
 }
-
-/*foto mia */
 .fotoCuatro {
     border-radius: 200px;
     width: 300px; 
 }
+/*termina estilo a la section de sobre mi */
+
+
 .boton {
     font-size: 1rem;
     padding: 2rem;
@@ -203,38 +192,26 @@ a.noves{
     font-family: $fuente;
     color:$color-greyDos;
 }
+/*termina estilo seccion novedades */
 
-/*formulario y tabla */
+/*formulario */
 .form {
     font-family: $fuente;
     color:$color-greyDos;
 }
-.tabla {
+.fuente-icono {
     font-size: 20px;
-    font-family: $fuente;
-    color: $color-greyDos;
-}
-.colorTabla {
-    color:$color-greyDos;
-    font-weight: bold;
-    font-size: 25px;
-    font-family:$fuente;
-}
-.relleno {
-    font-family: $fuente;
-    font-size: 15px;
-    color:$color-greyDos;
+    color:white;
 }
 /* testiomonios de pacientes */
 #testimonios {
     max-width: 100%;
 }
 /* todo lo que esta en el pie */
-.pie {
+.social-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    font-family:$fuente;
     color: $color-greyDos;
     text-align: center;
     text-decoration: none;
@@ -244,3 +221,4 @@ a.noves{
     vertical-align: middle;
     border-style: none;
 }
+/*termina todo lo que esta en el pie */
