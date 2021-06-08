@@ -1,4 +1,6 @@
 .header__container {
+    text-align:center;
+
     .encabezado {
         font-family: $fuenteTres;
         color: $color-verde;
@@ -9,12 +11,26 @@
     .fisiatria {
         color: $color-greyDos;
     }
-
+    nav {
+        position:fixed;
+        align-items:center;
+        width:100%;
+        background-color: $color-fondo;
+        .dropdown-menu {
+            background-color: $color-fondo;
+        }
+        .navbar-color {
+            background-color: $color-fondo;
+        }
+    }
     a {
         display: flex;
         align-items: center;
         text-decoration: none;
-        }
+    }
+    h1 {
+        padding-top:70px;
+    }
 }
 h4 {
     .main__hijoFlex {

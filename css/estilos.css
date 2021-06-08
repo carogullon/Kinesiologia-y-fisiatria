@@ -241,7 +241,8 @@ a.noves {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    justify-content: space-around; }
   .main__hijoFlex {
     display: flex;
     flex-direction: column;
@@ -249,14 +250,14 @@ a.noves {
     width: 33.33%; } }
 
 @media (min-width: 768px) {
-  .wow img {
-    padding: 10px; } }
-
-@media (min-width: 768px) {
   p {
     padding: auto; } }
 
 @media (min-width: 768px) {
+  .hijoServ img {
+    width: 750px; } }
+
+@media (min-width: 1200px) {
   .padreServ {
     display: flex;
     flex-direction: column;
@@ -265,7 +266,9 @@ a.noves {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+    .hijoServ img {
+      width: 600px; } }
 
 @media (min-width: 768px) {
   .sectionUno__form-academica {
@@ -285,20 +288,31 @@ a.noves {
     align-items: center;
     justify-content: space-around; } }
 
-.header__container .encabezado {
-  font-family: "Satisfy", cursive;
-  color: #acb622;
-  font-size: 60px;
-  background-color: white;
-  margin-top: 20px; }
-
-.header__container .fisiatria {
-  color: #433e3f; }
-
-.header__container a {
-  display: flex;
-  align-items: center;
-  text-decoration: none; }
+.header__container {
+  text-align: center; }
+  .header__container .encabezado {
+    font-family: "Satisfy", cursive;
+    color: #acb622;
+    font-size: 60px;
+    background-color: white;
+    margin-top: 20px; }
+  .header__container .fisiatria {
+    color: #433e3f; }
+  .header__container nav {
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    background-color: #c0b7b1; }
+    .header__container nav .dropdown-menu {
+      background-color: #c0b7b1; }
+    .header__container nav .navbar-color {
+      background-color: #c0b7b1; }
+  .header__container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; }
+  .header__container h1 {
+    padding-top: 70px; }
 
 h4 .main__hijoFlex {
   margin-bottom: 20px; }
