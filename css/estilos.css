@@ -1,5 +1,6 @@
 /*color gris clarito*/
 /* color gris oscuro */
+/*color gris mas clarito*/
 /*color verde*/
 /*fuentes de todo el texto*/
 /*color del fondo*/
@@ -14,6 +15,7 @@ body {
   margin-right: 10px;
   text-align: center; }
 
+/*estilo a botones */
 .btn-wsp {
   position: fixed;
   width: 60px;
@@ -35,6 +37,22 @@ body {
   background-color: white;
   text-decoration: none; }
 
+.boton {
+  font-size: 1rem;
+  padding: 2rem; }
+
+.btn-contacto {
+  font-size: 1rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  height: 60px;
+  width: 120px;
+  background-color: #7a7265;
+  text-align: center;
+  margin-left: 25px; }
+
+/*estilos generales a- i etc*/
 img {
   max-width: 100%; }
 
@@ -62,6 +80,10 @@ i {
 
 .header__container {
   width: 100%; }
+
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+  align-items: center;
+  background-color: #faf3ef; }
 
 /* Termina estilos al header */
 /* estilo general a los h2, h3 y h4 */
@@ -116,7 +138,7 @@ h4 {
 p {
   line-height: 1.6;
   font-family: "Montserrat", sans-serif;
-  padding: 10px; }
+  padding: 20px; }
 
 /* termina estilos a servicios del index */
 /* estilos a servicios en la section correspondiente */
@@ -173,10 +195,6 @@ p {
   width: 300px; }
 
 /*termina estilo a la section de sobre mi */
-.boton {
-  font-size: 1rem;
-  padding: 2rem; }
-
 /*estilo seccion novedades */
 a.noves {
   text-decoration: none;
@@ -222,6 +240,10 @@ a.noves {
     width: 63px;
     height: 63px;
     line-height: 66px; } }
+
+@media (min-width: 768px) {
+  ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    margin: 0 auto; } }
 
 @media (min-width: 768px) {
   #carouselExampleDark {
@@ -281,6 +303,19 @@ a.noves {
   ul li {
     padding: auto; } }
 
+@media (min-width: 1200px) {
+  .social-iconsDos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .social-iconsDos li i {
+      color: #433e3f;
+      font-size: 25px; }
+    .social-iconsDos li .fuente-iconsDos {
+      font-size: 25px;
+      font-family: "Montserrat", sans-serif; } }
+
 @media (min-width: 768px) {
   .contenedorFooter {
     display: flex;
@@ -298,15 +333,15 @@ a.noves {
     margin-top: 20px; }
   .header__container .fisiatria {
     color: #433e3f; }
+  .header__container #navbarSupportedContent {
+    background-color: #faf3ef; }
   .header__container nav {
     position: fixed;
     align-items: center;
     width: 100%;
-    background-color: #c0b7b1; }
+    background-color: #faf3ef; }
     .header__container nav .dropdown-menu {
-      background-color: #c0b7b1; }
-    .header__container nav .navbar-color {
-      background-color: #c0b7b1; }
+      background-color: #faf3ef; }
   .header__container a {
     display: flex;
     align-items: center;
@@ -345,6 +380,17 @@ ul li {
   font-size: 18px;
   text-align: inherit;
   margin-bottom: 15px; }
+
+.social-iconsDos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .social-iconsDos li i {
+    color: #433e3f;
+    font-size: 15px; }
+  .social-iconsDos li .fuente-iconoDos {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif; }
 
 .footer .contenedorFooter {
   background-color: #acb622;

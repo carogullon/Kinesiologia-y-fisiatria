@@ -10,6 +10,11 @@
         line-height: 66px;
 	}
 }
+@media (min-width: 768px) {
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+      margin: 0 auto;
+    }    
+}
 @media  (min-width: 768px) {
     #carouselExampleDark {
         width:100%;
@@ -79,6 +84,24 @@
 @media (min-width: 768px) {
     ul li {
         padding:auto;
+    }
+}
+@media (min-width: 1200px) {
+    .social-iconsDos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        li {
+            i {
+                color: $color-greyDos;
+                font-size: 25px;
+            }
+            .fuente-iconsDos {
+                font-size: 25px;
+                font-family: $fuente;
+            }
+        }
     }
 }
 @media (min-width: 768px) {

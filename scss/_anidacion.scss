@@ -11,16 +11,16 @@
     .fisiatria {
         color: $color-greyDos;
     }
+    #navbarSupportedContent{
+        background-color: $gris-clarito;
+    }
     nav {
         position:fixed;
         align-items:center;
         width:100%;
-        background-color: $color-fondo;
+        background-color: $gris-clarito;
         .dropdown-menu {
-            background-color: $color-fondo;
-        }
-        .navbar-color {
-            background-color: $color-fondo;
+            background-color: $gris-clarito;
         }
     }
     a {
@@ -77,6 +77,23 @@ ul {
 
     }
 }
+.social-iconsDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    li {
+        i {
+            color: $color-greyDos;
+            font-size: 15px;
+        }
+        .fuente-iconoDos {
+            font-size: 15px;
+            font-family: $fuente;
+    
+        }
+    }
+}
+
 .footer {
     .contenedorFooter {
         background-color: $color-verde;

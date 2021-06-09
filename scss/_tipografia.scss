@@ -9,6 +9,7 @@ body {
     margin-right: 10px;
     text-align: center;
 }
+/*estilo a botones */
 .btn-wsp{
     position:fixed;
     width:60px;
@@ -29,8 +30,24 @@ body {
     color: #20ba5a;
     background-color: white;
     text-decoration: none;
-
 }
+.boton {
+    font-size: 1rem;
+    padding: 2rem;
+}
+.btn-contacto {
+    font-size: 1rem;
+    color: white;
+    font-family:$fuente;
+    font-weight: bolder;
+    height:60px;
+    width: 120px;
+    background-color: $color-grey;
+    text-align:center;
+    margin-left: 25px;
+}
+
+/*estilos generales a- i etc*/
 img {
     max-width: 100%;
 }
@@ -45,6 +62,7 @@ i {
     font-style: $fuente;
     color: white;
 }
+
 /* empiezan estilos al header */
 .header__name {
     color:$color-grey;
@@ -58,6 +76,10 @@ i {
 }
 .header__container {
     width: 100%;
+}
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    align-items: center;
+    background-color: $gris-clarito;
 }
 /* Termina estilos al header */
 
@@ -116,7 +138,7 @@ h4 {
 p {
     line-height: 1.6;
     font-family:$fuente;
-    padding: 10px;
+    padding: 20px;
 }
 /* termina estilos a servicios del index */
 
@@ -178,12 +200,6 @@ p {
 }
 /*termina estilo a la section de sobre mi */
 
-
-.boton {
-    font-size: 1rem;
-    padding: 2rem;
-}
-
 /*estilo seccion novedades */
 
 a.noves{
@@ -207,6 +223,7 @@ a.noves{
 #testimonios {
     max-width: 100%;
 }
+
 /* todo lo que esta en el pie */
 .social-icons {
     display: flex;
