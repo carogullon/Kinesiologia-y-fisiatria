@@ -6,13 +6,9 @@
 /*color del fondo*/
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
-/* alineacion y margin al body */
 body {
-  margin-left: 10px;
-  margin-right: 10px;
   text-align: center; }
 
 /*estilo a botones */
@@ -41,15 +37,12 @@ body {
   font-size: 1rem;
   padding: 2rem; }
 
-.btn-contacto {
+.btn-group {
   font-size: 1rem;
-  color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   height: 60px;
   width: 120px;
-  background-color: #7a7265;
-  text-align: center;
   margin-left: 25px; }
 
 /*estilos generales a- i etc*/
@@ -82,8 +75,10 @@ i {
   width: 100%; }
 
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
-  align-items: center;
-  background-color: #faf3ef; }
+  align-items: center; }
+
+.carousel-inner {
+  height: 600px; }
 
 /* Termina estilos al header */
 /* estilo general a los h2, h3 y h4 */
@@ -92,11 +87,10 @@ h2 {
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
-  margin-top: 40px;
   padding: 15px 15px;
-  width: 200%/2;
   text-align: center;
-  background-color: #c0b7b1; }
+  background-color: #c0b7b1;
+  margin: 0; }
 
 h3 {
   color: #433e3f;
@@ -167,7 +161,7 @@ p {
 .sectionUno__form-academica {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
   justify-content: space-evenly;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
@@ -176,23 +170,23 @@ p {
 .sectionUno__titulosQuien {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-top: 40px; }
 
 .sectionUno__nombreQuienSoy {
   color: #acb622;
   font-size: 25px;
   font-style: oblique;
-  font-weight: bolder; }
+  font-weight: bolder;
+  text-align: left;
+  margin-left: 35px; }
 
 .sectionUno__formDos {
   font-size: 30px;
-  margin: 15px 0; }
+  margin: 15px 35px; }
 
 .fotoCuatro {
-  border-radius: 200px;
-  width: 300px; }
+  width: 350px;
+  margin: 0; }
 
 /*termina estilo a la section de sobre mi */
 /*estilo seccion novedades */
@@ -333,14 +327,13 @@ a.noves {
     margin-top: 20px; }
   .header__container .fisiatria {
     color: #433e3f; }
-  .header__container #navbarSupportedContent {
-    background-color: #faf3ef; }
-  .header__container nav {
+  .header__container .navbar {
     position: fixed;
-    align-items: center;
+    align-items: right;
     width: 100%;
-    background-color: #faf3ef; }
-    .header__container nav .dropdown-menu {
+    padding: 10px;
+    z-index: 1000; }
+    .header__container .navbar .dropdown-menu {
       background-color: #faf3ef; }
   .header__container a {
     display: flex;
@@ -361,7 +354,7 @@ h4 .main__hijoFlex {
 
 ul.nosotros li {
   list-style: none;
-  text-align: center;
+  text-align: left;
   font-size: 15px;
   display: block; }
 
@@ -396,7 +389,6 @@ ul li {
   background-color: #acb622;
   padding: 30px; }
   .footer .contenedorFooter .social-icons li {
-    margin-bottom: 20px;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: bolder;

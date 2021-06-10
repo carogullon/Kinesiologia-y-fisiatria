@@ -11,14 +11,12 @@
     .fisiatria {
         color: $color-greyDos;
     }
-    #navbarSupportedContent{
-        background-color: $gris-clarito;
-    }
-    nav {
+    .navbar {
         position:fixed;
-        align-items:center;
+        align-items:right;
         width:100%;
-        background-color: $gris-clarito;
+        padding:10px;
+        z-index: 1000;
         .dropdown-menu {
             background-color: $gris-clarito;
         }
@@ -50,7 +48,7 @@ h4 {
 ul.nosotros {
     li {
         list-style: none;
-        text-align: center;
+        text-align:left;
         font-size: 15px;
         display: block;
     }
@@ -100,7 +98,6 @@ ul {
         padding: 30px;
             .social-icons {
                 li {
-                    margin-bottom: 20px;
                     text-decoration: none;
                     font-family: $fuente;
                     font-weight: bolder;
