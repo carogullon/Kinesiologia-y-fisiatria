@@ -8,17 +8,24 @@
         background-color:white;
         margin-top: 20px;
     }
+    @media (min-width:768px) {
+        font-size:30px;
+    }
     .fisiatria {
         color: $color-greyDos;
     }
     .navbar {
         position:fixed;
+        top: 0;
+        right: 0;
+        left: 0;
         align-items:right;
         width:100%;
-        padding:10px;
+        padding:8px;
         z-index: 1000;
+        background-color: rgb(250, 243, 239)!important;
         .dropdown-menu {
-            background-color: $gris-clarito;
+            background-color:  rgb(250, 243, 239)!important;
         }
     }
     a {
@@ -28,6 +35,12 @@
     }
     h1 {
         padding-top:70px;
+    }
+}
+@media  (min-width: 768px) {
+    #carouselExampleDark {
+        width:100%;
+        margin: 0 auto;
     }
 }
 h4 {
@@ -43,6 +56,32 @@ h4 {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
+    }
+}
+.contactoDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+        li {
+            margin: 5px; 
+            i {
+                font-size: 15px; 
+                color: $color-greyDos;
+            }
+            .fuente-iconoDos {
+                font-size: 15px;
+                font-family:$fuente !important; 
+            }
+        }
+}
+@media (min-width: 768px) {
+    .contactoDos {
+      flex-direction: row;
+        .fuente-iconoDos {
+            font-size: 25px; 
+        } 
     }
 }
 ul.nosotros {
@@ -75,23 +114,6 @@ ul {
 
     }
 }
-.social-iconsDos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    li {
-        i {
-            color: $color-greyDos;
-            font-size: 15px;
-        }
-        .fuente-iconoDos {
-            font-size: 15px;
-            font-family: $fuente;
-    
-        }
-    }
-}
-
 .footer {
     .contenedorFooter {
         background-color: $color-verde;
@@ -109,6 +131,14 @@ ul {
                 color: white;
             }
     }
+}
+@media (min-width: 768px) {
+    .contenedorFooter {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-around;
+    } 
 }
 
 

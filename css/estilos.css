@@ -2,14 +2,23 @@
 /* color gris oscuro */
 /*color gris mas clarito*/
 /*color verde*/
-/*fuentes de todo el texto*/
 /*color del fondo*/
+/*fuentes de todo el texto*/
 * {
   margin: 0;
   padding: 0; }
 
 body {
   text-align: center; }
+
+/* mediaQuaries generales */
+@media (min-width: 768px) {
+  p {
+    padding: auto; } }
+
+@media (min-width: 768px) {
+  ul li {
+    padding: auto; } }
 
 /*estilo a botones */
 .btn-wsp {
@@ -37,13 +46,16 @@ body {
   font-size: 1rem;
   padding: 2rem; }
 
-.btn-group {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
-  height: 60px;
-  width: 120px;
-  margin-left: 25px; }
+.btn.btn-light.mx-auto {
+  margin-bottom: 15px;
+  font-size: 20px;
+  margin-right: 20px; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px; } }
 
 /*estilos generales a- i etc*/
 img {
@@ -77,8 +89,9 @@ i {
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
   align-items: center; }
 
-.carousel-inner {
-  height: 600px; }
+@media (min-width: 768px) {
+  ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    margin: 0 auto; } }
 
 /* Termina estilos al header */
 /* estilo general a los h2, h3 y h4 */
@@ -105,15 +118,20 @@ h4 {
 
 /* termina estilo general a los h2, h3 y h4 */
 /* estilos a sectionUno */
-.separarTitulos {
-  margin: 5px 0; }
-
 .sectionUno__bienvenida--modifier {
   color: #433e3f;
   background-color: white;
   font-weight: bolder;
   margin: 10px 0;
   font-family: "Mate SC", serif; }
+
+@media (min-width: 380px) {
+  .sectionUno__bienvenida--modifier {
+    font-size: 20px; } }
+
+@media (min-width: 768px) {
+  .sectionUno__bienvenida--modifier {
+    font-size: 50px; } }
 
 /* termina estilos a sectionUno */
 /* estilos a servicios del index */
@@ -126,13 +144,30 @@ h4 {
   display: flex;
   flex-direction: column; }
 
-.wow img:hover {
-  transform: scale(2, 2); }
+.bordesRedondeados {
+  margin: 0 auto;
+  width: 500px; }
+
+.bordesRedondeados:hover {
+  transform: scale(1, 1); }
 
 p {
   line-height: 1.6;
   font-family: "Montserrat", sans-serif;
   padding: 20px; }
+
+@media (min-width: 768px) {
+  .main__padreFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around; }
+  .main__hijoFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%; } }
 
 /* termina estilos a servicios del index */
 /* estilos a servicios en la section correspondiente */
@@ -156,6 +191,23 @@ p {
   font-size: 25px;
   font-family: "Mate SC", serif; }
 
+@media (min-width: 768px) {
+  .hijoServ img {
+    width: 750px; } }
+
+@media (min-width: 1200px) {
+  .padreServ {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .hijoServ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .hijoServ img {
+      width: 600px; } }
+
 /* termina estilos a servicios en la section correspondiente */
 /*estilo a la section de sobre mi */
 .sectionUno__form-academica {
@@ -166,6 +218,13 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   list-style: none; }
+
+@media (min-width: 768px) {
+  .sectionUno__form-academica {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; } }
 
 .sectionUno__titulosQuien {
   display: flex;
@@ -185,8 +244,12 @@ p {
   margin: 15px 35px; }
 
 .fotoCuatro {
-  width: 350px;
-  margin: 0; }
+  width: 50%;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .fotoCuatro {
+    width: 350px; } }
 
 /*termina estilo a la section de sobre mi */
 /*estilo seccion novedades */
@@ -210,7 +273,13 @@ a.noves {
 #testimonios {
   max-width: 100%; }
 
+iframe {
+  margin: 0; }
+
 /* todo lo que esta en el pie */
+.separarTitulos {
+  margin: 0; }
+
 .social-icons {
   display: flex;
   flex-direction: row;
@@ -225,98 +294,6 @@ a.noves {
   border-style: none; }
 
 /*termina todo lo que esta en el pie */
-@media (min-width: 768px) {
-  .header__encabezado {
-    font-size: 40px; } }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .btn-wsp {
-    width: 63px;
-    height: 63px;
-    line-height: 66px; } }
-
-@media (min-width: 768px) {
-  ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
-    margin: 0 auto; } }
-
-@media (min-width: 768px) {
-  #carouselExampleDark {
-    width: 100%;
-    margin: 0 auto; } }
-
-@media (min-width: 380px) {
-  .sectionUno__bienvenida--modifier {
-    font-size: 20px; } }
-
-@media (min-width: 768px) {
-  .sectionUno__bienvenida--modifier {
-    font-size: 50px; } }
-
-@media (min-width: 768px) {
-  .main__padreFlex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around; }
-  .main__hijoFlex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 33.33%; } }
-
-@media (min-width: 768px) {
-  p {
-    padding: auto; } }
-
-@media (min-width: 768px) {
-  .hijoServ img {
-    width: 750px; } }
-
-@media (min-width: 1200px) {
-  .padreServ {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-  .hijoServ {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .hijoServ img {
-      width: 600px; } }
-
-@media (min-width: 768px) {
-  .sectionUno__form-academica {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly; } }
-
-@media (min-width: 768px) {
-  ul li {
-    padding: auto; } }
-
-@media (min-width: 1200px) {
-  .social-iconsDos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-    .social-iconsDos li i {
-      color: #433e3f;
-      font-size: 25px; }
-    .social-iconsDos li .fuente-iconsDos {
-      font-size: 25px;
-      font-family: "Montserrat", sans-serif; } }
-
-@media (min-width: 768px) {
-  .contenedorFooter {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around; } }
-
 .header__container {
   text-align: center; }
   .header__container .encabezado {
@@ -325,22 +302,34 @@ a.noves {
     font-size: 60px;
     background-color: white;
     margin-top: 20px; }
+  @media (min-width: 768px) {
+    .header__container {
+      font-size: 30px; } }
   .header__container .fisiatria {
     color: #433e3f; }
   .header__container .navbar {
     position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     align-items: right;
     width: 100%;
-    padding: 10px;
-    z-index: 1000; }
+    padding: 8px;
+    z-index: 1000;
+    background-color: #faf3ef !important; }
     .header__container .navbar .dropdown-menu {
-      background-color: #faf3ef; }
+      background-color: #faf3ef !important; }
   .header__container a {
     display: flex;
     align-items: center;
     text-decoration: none; }
   .header__container h1 {
     padding-top: 70px; }
+
+@media (min-width: 768px) {
+  #carouselExampleDark {
+    width: 100%;
+    margin: 0 auto; } }
 
 h4 .main__hijoFlex {
   margin-bottom: 20px; }
@@ -351,6 +340,27 @@ h4 .main__hijoFlex {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center; }
+
+.contactoDos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .contactoDos li {
+    margin: 5px; }
+    .contactoDos li i {
+      font-size: 15px;
+      color: #433e3f; }
+    .contactoDos li .fuente-iconoDos {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif !important; }
+
+@media (min-width: 768px) {
+  .contactoDos {
+    flex-direction: row; }
+    .contactoDos .fuente-iconoDos {
+      font-size: 25px; } }
 
 ul.nosotros li {
   list-style: none;
@@ -374,17 +384,6 @@ ul li {
   text-align: inherit;
   margin-bottom: 15px; }
 
-.social-iconsDos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-  .social-iconsDos li i {
-    color: #433e3f;
-    font-size: 15px; }
-  .social-iconsDos li .fuente-iconoDos {
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif; }
-
 .footer .contenedorFooter {
   background-color: #acb622;
   padding: 30px; }
@@ -396,6 +395,13 @@ ul li {
     font-size: 25px; }
   .footer .contenedorFooter .infoFooter {
     color: white; }
+
+@media (min-width: 768px) {
+  .contenedorFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; } }
 
 .contenedor {
   display: grid;

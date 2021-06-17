@@ -5,6 +5,18 @@
 body {
     text-align: center;
 }
+/* mediaQuaries generales */
+
+@media (min-width: 768px) {
+    p {
+        padding:auto;
+    }
+}
+@media (min-width: 768px) {
+    ul li {
+        padding:auto;
+    }
+}
 /*estilo a botones */
 .btn-wsp{
     position:fixed;
@@ -31,13 +43,17 @@ body {
     font-size: 1rem;
     padding: 2rem;
 }
-.btn-group {
-    font-size: 1rem;
-    font-family:$fuente;
-    font-weight: bolder;
-    height:60px;
-    width: 120px;
-    margin-left: 25px;
+.btn.btn-light.mx-auto {
+    margin-bottom: 15px;
+    font-size:20px;
+    margin-right:20px;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
 }
 
 /*estilos generales a- i etc*/
@@ -73,8 +89,10 @@ i {
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     align-items: center;
 }
-.carousel-inner {
-    height: 600px;
+@media (min-width: 768px) {
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+      margin: 0 auto;
+    }    
 }
 /* Termina estilos al header */
 
@@ -104,15 +122,23 @@ h4 {
 /* termina estilo general a los h2, h3 y h4 */
 
 /* estilos a sectionUno */
-.separarTitulos {
-    margin: 5px 0;
-}
+
 .sectionUno__bienvenida--modifier {
     color:$color-greyDos;
     background-color: white;
     font-weight: bolder;
     margin: 10px 0;
     font-family: $fuenteDos;
+}
+@media (min-width: 380px) {
+    .sectionUno__bienvenida--modifier {
+        font-size: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .sectionUno__bienvenida--modifier {
+        font-size:50px;
+    }
 }
 /* termina estilos a sectionUno */
 
@@ -126,13 +152,32 @@ h4 {
     display: flex;
     flex-direction: column;
 }
-.wow img:hover {
-    transform: scale(2,2);
+.bordesRedondeados {
+    margin:0 auto;
+    width: 500px;
+}
+.bordesRedondeados:hover {
+    transform: scale(1,1);
 }
 p {
     line-height: 1.6;
     font-family:$fuente;
     padding: 20px;
+}
+@media (min-width: 768px) {
+    .main__padreFlex {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+        justify-content: space-around;
+    }
+    .main__hijoFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33.33%;
+    }
 }
 /* termina estilos a servicios del index */
 
@@ -158,6 +203,27 @@ p {
     font-size: 25px;
     font-family: $fuenteDos;
 }
+@media (min-width:768px) {
+    .hijoServ img {
+        width:750px;
+    }
+}
+@media (min-width: 1200px) {
+    .padreServ {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .hijoServ {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        img {
+            width:600px;
+        }
+    }
+}
 /* termina estilos a servicios en la section correspondiente */
 
 /*estilo a la section de sobre mi */
@@ -170,6 +236,14 @@ p {
     font-family:$fuente;
     font-size: 22px;
     list-style: none;
+}
+@media (min-width: 768px) {
+    .sectionUno__form-academica {
+        display:flex;
+        flex-direction: row;
+        align-items: center;    
+        justify-content: space-evenly;
+    }
 }
 .sectionUno__titulosQuien {
     display: flex;
@@ -189,9 +263,13 @@ p {
     margin: 15px 35px;
 }
 .fotoCuatro {
-    width: 350px;
-    margin: 0;
-
+    width: 50%;
+    margin: 0 auto;
+}
+@media (min-width:768px) {
+        .fotoCuatro {
+            width: 350px;
+        }
 }
 /*termina estilo a la section de sobre mi */
 
@@ -218,8 +296,13 @@ a.noves{
 #testimonios {
     max-width: 100%;
 }
-
+iframe {
+    margin:0;
+}
 /* todo lo que esta en el pie */
+.separarTitulos {
+    margin: 0;
+}
 .social-icons {
     display: flex;
     flex-direction: row;
@@ -234,3 +317,4 @@ a.noves{
     border-style: none;
 }
 /*termina todo lo que esta en el pie */
+
