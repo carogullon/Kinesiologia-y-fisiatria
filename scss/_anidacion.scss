@@ -42,6 +42,7 @@
     #carouselExampleDark {
         width:100%;
         margin: 0 auto;
+        
     }
 }
 .carousel-caption {
@@ -68,22 +69,19 @@ h4 {
 }
 /*termina anidacion de servicios */
 
-/*anidacion de la parte de contacto y formulario */
+/*anidacion de la parte de me podes contactar por*/
 .contactoDos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-        li {
-            margin: 5px; 
-            i {
-                font-size: 15px; 
-                color: $color-greyDos;
-            }
+    background-color: $color-fondo;
+        .listaContacto {
             .fuente-iconoDos {
-                font-size: 15px;
+                font-size: 20px;
                 font-family:$fuente !important; 
+                color: white;
             }
         }
 }
@@ -95,40 +93,43 @@ h4 {
         } 
     }
 }
-ul.nosotros {
-    li {
-        list-style: none;
-        text-align:left;
-        font-size: 15px;
-        display: block;
-    }
-}
 /*termina anidacion de contacto*/
 
 /*anidacion de novedades */
 .padre__nov {
     display: flex;
     flex-direction: column;
-    align-items:center;
     flex-wrap: wrap;
-     
+    h4 {
+        text-align: center;
+        font-size:15px;
+        font-weight: bolder;
+        margin-top:20px;
+        font-size:20px;
+    }
 }
 .hijo__nov {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+.fotoNov {
+    margin: 0 auto;
 }
 @media (min-width: 768px) {
     .padre__nov {
         display:flex;
         flex-direction: column;
         width:100%;
-        margin: 10px 0 10px;
     }
     .hijo__nov {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        margin-left:10px;
+    }
+    .padre__nov h4 {
+        font-size:22px;
+        font-weight:bolder;
+        margin: 20px 40px 15px;
     }
 }
 .novesLista {

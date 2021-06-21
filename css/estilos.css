@@ -39,16 +39,28 @@
   background-color: white;
   text-decoration: none; }
 
-.boton {
+.btn-group {
   font-size: 1rem;
   padding: 2rem;
-  margin: 0 auto; }
+  display: flex;
+  justify-content: center; }
 
 .btn.btn-light.mx-auto {
   margin-bottom: 15px;
-  font-size: 20px;
-  margin-right: 20px;
-  align-items: center; }
+  font-size: 20px; }
+
+.formulario .btn-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  margin-left: 100%; }
+
+.sectionDos .btn-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  margin-left: 60%;
+  font-size: 20px; }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .btn-wsp {
@@ -171,13 +183,11 @@ p {
   .main__padreFlex {
     display: flex;
     flex-direction: row;
-    align-items: center;
     width: 100%;
     justify-content: space-around; }
   .main__hijoFlex {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 33.33%; } }
 
 /* termina estilos a servicios del index */
@@ -200,11 +210,11 @@ p {
 
 .tituloServ {
   font-size: 25px;
-  font-family: "Mate SC", serif; }
+  font-family: "Montserrat", sans-serif; }
 
 @media (min-width: 768px) {
   .hijoServ img {
-    width: 750px; } }
+    width: 700px; } }
 
 @media (min-width: 1200px) {
   .padreServ {
@@ -217,50 +227,59 @@ p {
     justify-content: center;
     align-items: center; }
     .hijoServ img {
-      width: 600px; } }
+      width: 700px; } }
 
 /* termina estilos a servicios en la section correspondiente */
 /*estilo a la section de sobre mi */
-.sectionUno__form-academica {
+.sectionUno__titulosQuien {
   display: flex;
   flex-direction: column;
   text-align: left;
-  justify-content: space-evenly;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   list-style: none; }
 
 @media (min-width: 1200px) {
-  .sectionUno__form-academica {
+  .sectionUno__titulosQuien {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly; } }
+    flex-direction: row; } }
 
-.sectionUno__titulosQuien {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px; }
+.sectionUno__titulosQuien .fotoCuatro {
+  width: 300px;
+  margin: 0 auto; }
 
-.sectionUno__nombreQuienSoy {
+@media (min-width: 1200px) {
+  .sectionUno__titulosQuien .fotoCuatro {
+    margin-right: 30px;
+    width: 350px;
+    margin-left: 0; } }
+
+.textoNosotros .sectionUno__nombreQuienSoy {
   color: #acb622;
   font-size: 25px;
   font-style: oblique;
   font-weight: bolder;
   text-align: left;
-  margin-left: 35px; }
-
-.sectionUno__formDos {
-  font-size: 30px;
-  margin: 15px; }
-
-.fotoCuatro {
-  width: 50%;
-  margin: 0 auto; }
+  margin-left: 30px;
+  margin: 10px 0 10px 30px; }
 
 @media (min-width: 768px) {
-  .fotoCuatro {
-    width: 300px; } }
+  .textoNosotros .sectionUno__nombreQuienSoy {
+    margin-left: 20%;
+    margin-bottom: 20px; } }
+
+.textoNosotros .sectionUno__formDos {
+  font-size: 20px;
+  margin-right: 20px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-left: 30px; }
+
+.textoNosotros ul.nosotros li {
+  list-style: none;
+  text-align: left;
+  font-size: 15px; }
 
 /*termina estilo a la section de sobre mi */
 /*estilo seccion novedades */
@@ -272,9 +291,18 @@ a.noves {
 
 /*termina estilo seccion novedades */
 /*formulario */
-.form {
+.sectionTres {
+  background-color: #faf3ef; }
+
+.formulario {
   font-family: "Montserrat", sans-serif;
-  color: #433e3f; }
+  color: #433e3f;
+  margin-left: 15%;
+  margin-right: 20%; }
+
+@media (min-width: 768px) {
+  .formulario {
+    width: 70%; } }
 
 .fuente-icono {
   font-size: 20px;
@@ -363,21 +391,18 @@ h4 .main__hijoFlex {
   text-align: center; }
 
 /*termina anidacion de servicios */
-/*anidacion de la parte de contacto y formulario */
+/*anidacion de la parte de me podes contactar por*/
 .contactoDos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; }
-  .contactoDos li {
-    margin: 5px; }
-    .contactoDos li i {
-      font-size: 15px;
-      color: #433e3f; }
-    .contactoDos li .fuente-iconoDos {
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif !important; }
+  flex-wrap: wrap;
+  background-color: #c0b7b1; }
+  .contactoDos .listaContacto .fuente-iconoDos {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif !important;
+    color: white; }
 
 @media (min-width: 768px) {
   .contactoDos {
@@ -385,35 +410,39 @@ h4 .main__hijoFlex {
     .contactoDos .fuente-iconoDos {
       font-size: 25px; } }
 
-ul.nosotros li {
-  list-style: none;
-  text-align: left;
-  font-size: 15px;
-  display: block; }
-
 /*termina anidacion de contacto*/
 /*anidacion de novedades */
 .padre__nov {
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-wrap: wrap; }
+  .padre__nov h4 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 20px; }
 
 .hijo__nov {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
+
+.fotoNov {
+  margin: 0 auto; }
 
 @media (min-width: 768px) {
   .padre__nov {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 10px 0 10px; }
+    width: 100%; }
   .hijo__nov {
     display: flex;
     flex-direction: row;
-    align-items: center; } }
+    margin-left: 10px; }
+  .padre__nov h4 {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 20px 40px 15px; } }
 
 .novesLista {
   margin-bottom: 10px; }

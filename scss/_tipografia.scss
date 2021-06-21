@@ -36,16 +36,32 @@
     background-color: white;
     text-decoration: none;
 }
-.boton {
+.btn-group {
     font-size: 1rem;
     padding: 2rem;
-    margin: 0 auto;
+    display:flex;
+    justify-content: center;
 }
 .btn.btn-light.mx-auto {
     margin-bottom: 15px;
     font-size:20px;
-    margin-right:20px;
-    align-items: center;
+}
+.formulario {
+    .btn-right {
+        display:flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        margin-left:100%;
+    }
+}
+.sectionDos {
+        .btn-right {
+            display:flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+            margin-left:60%;
+            font-size: 20px;
+        }
 }
 @media only screen and (min-width:320px) and (max-width:768px){
     .btn-wsp{
@@ -181,14 +197,12 @@ p {
     .main__padreFlex {
         display:flex;
         flex-direction: row;
-        align-items: center;
         width:100%;
         justify-content: space-around;
     }
     .main__hijoFlex {
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 33.33%;
     }
 }
@@ -214,11 +228,11 @@ p {
 }
 .tituloServ {
     font-size: 25px;
-    font-family: $fuenteDos;
+    font-family: $fuente;
 }
 @media (min-width:768px) {
     .hijoServ img {
-        width:750px;
+        width:700px;
     }
 }
 @media (min-width: 1200px) {
@@ -233,7 +247,7 @@ p {
         justify-content: center;
         align-items:center;
         img {
-            width:600px;
+            width:700px;
         }
     }
 }
@@ -241,49 +255,66 @@ p {
 
 /*estilo a la section de sobre mi */
 
-.sectionUno__form-academica {
-    display: flex; 
-    flex-direction: column;
+.sectionUno__titulosQuien {
+    display:flex;
+    flex-direction:column;
     text-align: left;    
-    justify-content: space-evenly;
     font-family:$fuente;
     font-size: 22px;
     list-style: none;
 }
-@media (min-width: 1200px) {
-    .sectionUno__form-academica {
+@media (min-width:1200px) {
+    .sectionUno__titulosQuien {
         display:flex;
-        flex-direction: row;
-        align-items: center;    
-        justify-content: space-evenly;
+        flex-direction:row;
     }
 }
 .sectionUno__titulosQuien {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-}
-.sectionUno__nombreQuienSoy {
-    color: $color-verde;
-    font-size: 25px;
-    font-style: oblique;
-    font-weight: bolder;
-    text-align: left;
-    margin-left: 35px;
-}
-.sectionUno__formDos {
-    font-size: 30px;
-    margin: 15px;
-}
-.fotoCuatro {
-    width: 50%;
-    margin: 0 auto;
-}
-@media (min-width:768px) {
+    .fotoCuatro {
+        width:300px;
+        margin: 0 auto;
+    }
+    @media (min-width:1200px) {
         .fotoCuatro {
-            width: 300px;
+            margin-right:30px;
+            width:350px;
+            margin-left:0;
         }
+    }
 }
+.textoNosotros {
+    .sectionUno__nombreQuienSoy {
+        color: $color-verde;
+        font-size: 25px;
+        font-style: oblique;
+        font-weight: bolder;
+        text-align: left;
+        margin-left:30px;
+        margin: 10px 0 10px 30px;
+    }
+    @media (min-width:768px) {
+        .sectionUno__nombreQuienSoy {
+            margin-left: 20%;
+            margin-bottom: 20px;
+        }
+    }
+    .sectionUno__formDos {
+         font-size: 20px;
+         margin-right:20px;
+         font-weight:bolder;
+         margin-bottom:15px;
+         text-align: left;
+         margin-left:30px;
+    }
+    ul.nosotros {
+        li {
+            list-style: none;
+            text-align:left;
+            font-size: 15px;
+        }
+    }
+}
+
 /*termina estilo a la section de sobre mi */
 
 /*estilo seccion novedades */
@@ -297,9 +328,19 @@ a.noves{
 /*termina estilo seccion novedades */
 
 /*formulario */
-.form {
+.sectionTres {
+    background-color: $gris-clarito;
+}
+.formulario {
     font-family: $fuente;
     color:$color-greyDos;
+    margin-left: 15%;
+    margin-right:20%;
+}
+@media (min-width:768px) {
+    .formulario {
+        width:70%; 
+    }
 }
 .fuente-icono {
     font-size: 20px;
