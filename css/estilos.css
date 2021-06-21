@@ -221,13 +221,19 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%; }
+  .tituloServ {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center; }
   .hijoServ {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-    .hijoServ img {
-      width: 700px; } }
+    .hijoServ .bordesRedondeados {
+      width: 450px;
+      padding: 0;
+      margin-left: 10px; } }
 
 /* termina estilos a servicios en la section correspondiente */
 /*estilo a la section de sobre mi */

@@ -241,13 +241,20 @@ p {
         flex-direction: column;
         width:100%;
     }
+    .tituloServ {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align:center;
+    }
     .hijoServ {
         display:flex;
         flex-direction: row;
         justify-content: center;
         align-items:center;
-        img {
-            width:700px;
+        .bordesRedondeados {
+            width:450px;
+            padding:0;
+            margin-left:10px;
         }
     }
 }
