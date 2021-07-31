@@ -46,7 +46,7 @@
     margin-bottom: 15px;
     font-size:20px;
 }
-.formulario {
+#formulario {
     .btn-right {
         display:flex;
         justify-content: flex-end;
@@ -338,14 +338,14 @@ a.noves{
 .sectionTres {
     background-color: $gris-clarito;
 }
-.formulario {
+#formulario {
     font-family: $fuente;
     color:$color-greyDos;
     margin-left: 15%;
     margin-right:20%;
 }
 @media (min-width:768px) {
-    .formulario {
+    #formulario {
         width:70%; 
     }
 }
@@ -356,13 +356,50 @@ a.noves{
 label {
     text-align: center;
 }
+.errorForm {
+    color:red;
+    font-size: 30px;
+}
+
 /* testiomonios de pacientes */
 #testimonios {
-    max-width: 100%;
+    height: 100px;
+    width:80%;
+    margin-left: 20px;
+    
+}
+@media (min-width:768px) {
+    #testimonios {
+        height: 200px; 
+        margin-left:10%; 
+        width:80%;
+    }
 }
 iframe {
     margin:0;
 }
+
+/*productos */
+.card-text {
+    font-size: 15px;
+}
+@media (min-width: 768px) {
+    #contenedor-productos {
+        display:flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-around;
+
+    }
+    .cada-producto {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+
 /* todo lo que esta en el pie */
 .separarTitulos {
     margin: 0;

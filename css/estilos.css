@@ -49,7 +49,7 @@
   margin-bottom: 15px;
   font-size: 20px; }
 
-.formulario .btn-right {
+#formulario .btn-right {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
@@ -300,14 +300,14 @@ a.noves {
 .sectionTres {
   background-color: #faf3ef; }
 
-.formulario {
+#formulario {
   font-family: "Montserrat", sans-serif;
   color: #433e3f;
   margin-left: 15%;
   margin-right: 20%; }
 
 @media (min-width: 768px) {
-  .formulario {
+  #formulario {
     width: 70%; } }
 
 .fuente-icono {
@@ -317,12 +317,38 @@ a.noves {
 label {
   text-align: center; }
 
+.errorForm {
+  color: red;
+  font-size: 30px; }
+
 /* testiomonios de pacientes */
 #testimonios {
-  max-width: 100%; }
+  height: 100px;
+  width: 80%;
+  margin-left: 20px; }
+
+@media (min-width: 768px) {
+  #testimonios {
+    height: 200px;
+    margin-left: 10%;
+    width: 80%; } }
 
 iframe {
   margin: 0; }
+
+/*productos */
+.card-text {
+  font-size: 15px; }
+
+@media (min-width: 768px) {
+  #contenedor-productos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around; }
+  .cada-producto {
+    display: flex;
+    flex-direction: column; } }
 
 /* todo lo que esta en el pie */
 .separarTitulos {
@@ -463,7 +489,7 @@ h4 .main__hijoFlex {
 /*anidacion de footer*/
 .footer .contenedorFooter {
   background-color: #acb622;
-  padding: 30px; }
+  padding: 80px; }
   .footer .contenedorFooter .social-icons li {
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
@@ -491,7 +517,7 @@ h4 .main__hijoFlex {
   grid-gap: 15px;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header         header           header" "sectionUno     sectionUno       sectionUno" "main           main             main" "footer           footer         footer"; }
+  grid-template-areas: "header         header           header" "sectionUno     sectionUno       sectionUno" "main           main             main" "footer         footer         footer"; }
 
 .contenedor .header {
   grid-column: 1/4;

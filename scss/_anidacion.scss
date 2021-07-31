@@ -25,6 +25,7 @@
         padding:8px;
         z-index: 1000;
         background-color: rgb(250, 243, 239)!important;
+        
         .dropdown-menu {
             background-color:  rgb(250, 243, 239)!important;
         }
@@ -148,7 +149,7 @@ h4 {
 .footer {
     .contenedorFooter {
         background-color: $color-verde;
-        padding: 30px;
+        padding: 80px;
             .social-icons {
                 li {
                     text-decoration: none;
