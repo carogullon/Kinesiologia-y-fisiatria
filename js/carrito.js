@@ -108,7 +108,7 @@ function eliminarCarrito(id) {
 	let cantidad = contador.value
 
 	console.log(id)
-	const item = productosObj.filter((prod) => prod.id == id);
+	const item = productosKine.filter((prod) => prod.id == id);
 
 	if (cantidad != 0) {
 		cantidad--
@@ -129,7 +129,7 @@ function eliminarCarrito(id) {
 
 	
 	const carritoTemp = carrito.filter((prod)=> prod.id != id);
-	carritoTemp.push(producto)
+	carritoTemp.push(producto);
 	carrito = carritoTemp
 
 	console.log(carrito)

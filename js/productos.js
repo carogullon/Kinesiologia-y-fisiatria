@@ -6,9 +6,9 @@ function busqueda() {
 		cargarProductos(productosKine) //mostrar todos los productos	
 	} else {
 	console.log(palabra)//mostrar producto selccionado
-    const productosTemp = productosKine.filter(prod => prod.nombre.toUpperCase().indexOf(palabra.toUpperCase()) > -1);
-	console.log(productosTemp);
-	cargarProductos(productosTemp);
+    const productosSelec = productosKine.filter(prod => prod.nombre.toUpperCase().indexOf(palabra.toUpperCase()) > -1);
+	console.log(productosSelec);
+	cargarProductos(productosSelec);
     }
 }
 
