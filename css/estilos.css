@@ -343,12 +343,26 @@ iframe {
 @media (min-width: 768px) {
   #contenedor-productos {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
   .cada-producto {
-    display: flex;
-    flex-direction: column; } }
+    text-align: center; }
+  .cada-producto .card {
+    max-width: 350px;
+    margin: 30px; }
+  .cada-producto img {
+    max-width: 250px; } }
+
+#search-submit {
+  font-size: 20px;
+  background-color: lavender;
+  font-style: "Montserrat", sans-serif;
+  margin-bottom: 10px; }
+
+#buscador {
+  text-align: center !important;
+  margin-top: 5px;
+  margin-bottom: 10px; }
 
 /* todo lo que esta en el pie */
 .separarTitulos {

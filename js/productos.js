@@ -1,4 +1,19 @@
-const productos = [
+function busqueda() {
+
+	const palabra = document.getElementById("search-input").value
+
+	if (palabra == "") {
+		cargarProductos(productosKine) //mostrar todos los productos	
+	} else {
+	console.log(palabra)//mostrar producto selccionado
+    const productosTemp = productosKine.filter(prod => prod.nombre.toUpperCase().indexOf(palabra.toUpperCase()) > -1);
+	console.log(productosTemp);
+	cargarProductos(productosTemp);
+    }
+}
+
+
+const productosKine = [
     {
         id:0,
         nombre: "Theraband resistencia leve",
@@ -51,24 +66,4 @@ const productos = [
     },
 ]
 
-productos.forEach(el => {
-    let miHTML = document.querySelector("#contenedor-productos");
-    
-    miHTML.innerHTML += 
-        
-    `
-    
-    
-        <div class="cada-producto">
-            <article class="card text-center w-20">
-            <img class="card-img-top w-70" src="${el.img}" alt="imagen-producto-kinesio">
-            <div class="card-body">
-            <h5 class="card-title">${el.nombre}<nombre/h5>
-            <h6>$${el.precio}</h6>
-            <p class="card-text">${el.descripcion}.</p>
-            <a href="#" class="btn btn-outline-dark">COMPRAR</a>
-            </div>
-            </article>    
-        </div>  
-    `
-});
+

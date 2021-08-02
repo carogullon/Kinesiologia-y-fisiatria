@@ -1,4 +1,4 @@
-/*Bienvenida al paciente //
+//Bienvenida al paciente 
 let nombreIngresado = prompt("Ingrese su nombre");
 let apellidoIngresado = prompt("Ingrese su apellido");
 if ((nombreIngresado !="") && (apellidoIngresado !="")){

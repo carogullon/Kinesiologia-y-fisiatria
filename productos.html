@@ -69,24 +69,26 @@
     </header>
 
     <section id="productosKinesio">
+
         <div class="tituloProductos">
             <h2>PRODUCTOS PARA REHABILITACIÓN</h2>
         </div>
         
-        <div class="buscador">
-            <input class="search-input" type="search" name="s" placeholder="Buscar">
-            <button class="search-submit" type="submit" role="button">Buscar</button>
+        <div id="buscador">
+          <input type="search" name="busqueda" id="search-input" placeholder="Ingrese el producto">
+          <div id="error"></div>
+          <button id="search-submit" type="submit" role="button" onclick="busqueda ()";>Buscar</button>
         </div>
-
+      
         <div id="contenedor-productos">
           
 
         </div>
     
-    </main>
+  </section>
     
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/productos.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>
