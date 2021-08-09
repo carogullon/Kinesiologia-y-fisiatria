@@ -7,15 +7,7 @@ input1.onchange = () => {console.log("valorNombre")};
 input2.onchange = () => {console.log("valorApellido")};
 input3.onchange = () => {console.log("valorMail")};
 
-let miFormulario = document.getElementById("formulario");
 
-miFormulario.addEventListener("submit", validarFormulario);
-
-function validarFormulario (e) {
-	e.preventDefault();
-	let formulario = e.target
-	console.log(formulario.children[0].value);
-}
 */
 function tomarDato(parametros) {
 	let nombre = document.querySelector("#nombre").value
@@ -25,7 +17,7 @@ function tomarDato(parametros) {
 	let pregunta2 = document.querySelector("#reservar").value
 	let comentarioPaciente = document.querySelector("#floatingTextarea2").value
 	
-	console.log(nombre,apellido,mail, pregunta1, pregunta2, comentarioPaciente);
+	console.log(nombre,apellido, mail, pregunta1, pregunta2, comentarioPaciente);
 
 	let error = document.querySelector("#error") 
 	

@@ -321,21 +321,6 @@ label {
   color: red;
   font-size: 30px; }
 
-/* testiomonios de pacientes */
-#testimonios {
-  height: 100px;
-  width: 80%;
-  margin-left: 20px; }
-
-@media (min-width: 768px) {
-  #testimonios {
-    height: 200px;
-    margin-left: 10%;
-    width: 80%; } }
-
-iframe {
-  margin: 0; }
-
 /*productos */
 .card-text {
   font-size: 15px; }
@@ -353,16 +338,26 @@ iframe {
   .cada-producto img {
     max-width: 250px; } }
 
-#search-submit {
-  font-size: 20px;
-  background-color: lavender;
-  font-style: "Montserrat", sans-serif;
-  margin-bottom: 10px; }
-
 #buscador {
-  text-align: center !important;
-  margin-top: 5px;
-  margin-bottom: 10px; }
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25%;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif; }
+  #buscador #search-submit {
+    font-size: 20px;
+    font-style: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+    width: 40%;
+    border: #7a7265; }
+  #buscador #search-input {
+    width: 40%;
+    height: 80%;
+    border: #acb622;
+    padding: 10px; }
 
 /* todo lo que esta en el pie */
 .separarTitulos {

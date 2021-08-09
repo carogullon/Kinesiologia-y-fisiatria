@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="seccion de contacto donde el usuario puede interactuar con la kinesiologa, dejar preguntas o dudas e incluso elegir el servicio que desea realizar. tambien puede ver la ubicacion del consultorio">
+    <meta name="keywords" content="contacto, formulario, preguntas, respuetas, reserva, turno, ubicacion, dudas, resolver">
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Montserrat & display = swap" rel = "hoja de estilo ">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/whatsapp?style=brands">
+    <script src="https://kit.fontawesome.com/c8bfb8fcf1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/WhatsApp Image 2021-05-26 at 13.09.24.png">
+    <title>Checkout Carrito</title>
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=+5492494465819" class="btn-wsp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <header class="header"> 
+      <div class="header__container"> 
+          <!-- empieza menú de navegación-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="images/WhatsApp Image 2021-05-26 at 13.09.24.png" alt="logo" class="logo" width="60px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="servicios.html">Reeducación Postural Global</a></li>
+                          <li><a class="dropdown-item" href="servicios.html">Kinesiología Deportiva</a></li>
+                          <li><a class="dropdown-item" href="servicios.html">Mobility & Stretching</a></li>
+                      </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!--Termina el menú -->
+
+        <!-- empieza el titulo -->
+        <h1 class="header__name">Carolina Gullón</h1>
+        <h2 class="encabezado">Kinesiología <span class="fisiatria"> y Fisiatría</span></h2>   
+      </div>
+    </header> 
+</head>
+<body>
+    <section id="carrito-de-compras">
+        <h2>Carrito de compras</h2>
+      
+        <div id="carrito" class="row">
+    
+        </div>
+
+        <div id="finalizarCompra">
+
+        </div>
+    
+    </section>
+         
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/checkoutCarrito.js"></script>
+</body>
+</html>

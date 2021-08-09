@@ -6,13 +6,6 @@ if ((nombreIngresado !="") && (apellidoIngresado !="")){
 }
 
 
-/*mensaje bienvenida aleatorio TERMINAR DE ARMAR!//
-const mensajeBienvenida = [
-    {mensajeUno: "Bienvenidos a nuestra pagina oficial de kinesiología y fisiatría"},
-    {mensajeDos: "Bienvenidos a nuestra pagina! Gracias por elegirnos!"},
-    {mensajeTres: "Bienenidos! Ofrecemos RPG, stretching y FKT, gracias por elegirnos!"},
-]
-
 
 //Servicio que el paciente quiere contratar: RPG, stretching o FKT y devuelve la cantidad de sesiones al mes que tiene para usar //
 // Valores de las sesiones: 
@@ -58,7 +51,6 @@ if (servicio.toUpperCase() === "RPG") {
     alert ("Error en los datos ingresados. Por favor intentelo nuevamente.")
 }
 
-*/
 //Datos de pacientes ingresados//
 let Paciente = (nombreIngresado + apellidoIngresado);
 

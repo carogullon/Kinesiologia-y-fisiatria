@@ -361,23 +361,6 @@ label {
     font-size: 30px;
 }
 
-/* testiomonios de pacientes */
-#testimonios {
-    height: 100px;
-    width:80%;
-    margin-left: 20px;
-    
-}
-@media (min-width:768px) {
-    #testimonios {
-        height: 200px; 
-        margin-left:10%; 
-        width:80%;
-    }
-}
-iframe {
-    margin:0;
-}
 
 /*productos */
 .card-text {
@@ -401,16 +384,30 @@ iframe {
       }
 
 }
-#search-submit {
-    font-size: 20px;
-    background-color:lavender;
-    font-style: $fuente;
-    margin-bottom: 10px;
-}
+
 #buscador {
-    text-align: center !important;
-    margin-top: 5px;
+    justify-content: center;
+    margin-top: 10px;
     margin-bottom:10px;
+    margin-left:25%;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    font-family: $fuente;
+
+    #search-submit {
+        font-size: 20px;
+        font-style: $fuente;
+        margin-bottom: 10px;
+        width:40%;
+        border: rgba(122, 114, 101, 1);
+    }
+    #search-input {
+        width:40%;
+        height:80%;
+        border: rgb(172, 182, 34);
+        padding: 10px;
+    }
 }
 
 /* todo lo que esta en el pie */

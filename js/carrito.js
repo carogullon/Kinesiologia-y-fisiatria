@@ -2,6 +2,7 @@ window.onload = function () {
 	cargarProductos(productosKine);	
 }
 
+
 function cargarProductos (productosKine) {
 	const productos = document.getElementById("contenedor-productos");
     
@@ -36,34 +37,13 @@ function cargarProductos (productosKine) {
 	                	    </button>
 	                    </div>
 	                </div>
-                    <button id="${productosKine.id}" class="btn">COMPRAR</button><br>
                     </div>
                 </div>
             </article>    
-        </div>`
-    }
-
-    productos.innerHTML = html;
-
+        </div>`;
+	}
+	productos.innerHTML = html;
 }
-
-
-//Boton del carrito 
-
-let btn = document.getElementsByClassName("btn");
-for (let i = 0; btn.length > i; i++) {
-  btn[i].addEventListener("click", agregarAlCarrito);
-}
-function clickeado(e) {
-  console.log(e.target);
-  e.target.style.opacity = "0.8";
-  e.target.style.backgroundColor = "rgb(172, 182, 34)";
-  e.target.innerHTML = "Reservado";
-}
-function agregarAlCarrito(e) {
-  clickeado(e);
-} 
-
 
 //CARRITO de compras
 
@@ -113,7 +93,7 @@ function eliminarCarrito(id) {
 	if (cantidad != 0) {
 		cantidad--
 	} else {
-		alert("No puede ser menor a 0")
+		alert("La selección del producto no puede ser menor a 0")
 	}
 
 	contador.value = cantidad;
@@ -149,8 +129,6 @@ function ordenar(tipo, objeto) {
 		
 	}
 }
-
-
 
 
 
