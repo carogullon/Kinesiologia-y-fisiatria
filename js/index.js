@@ -1,9 +1,10 @@
-//Bienvenida al paciente 
+/*Bienvenida al paciente 
 let nombreIngresado = prompt("Ingrese su nombre");
 let apellidoIngresado = prompt("Ingrese su apellido");
 if ((nombreIngresado !="") && (apellidoIngresado !="")){
 	alert("Bienvenido/a " + nombreIngresado + " " + apellidoIngresado + " a nuestra página web de kinesiología");
 }
+
 
 
 
@@ -114,5 +115,4 @@ reservaTurno.forEach(el =>{
                                 <p>Veces: ${el.veces} </p>
                                 <p>Precio: ${el.precio} </p>`;
 });
-
-
+*/
