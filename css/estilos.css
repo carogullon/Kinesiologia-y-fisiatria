@@ -362,6 +362,12 @@ label {
 .table {
   margin: 2%; }
 
+#total {
+  background-color: #c0b7b1; }
+
+.inputsClass {
+  margin-left: 50%; }
+
 /* todo lo que esta en el pie */
 .separarTitulos {
   margin: 0; }
