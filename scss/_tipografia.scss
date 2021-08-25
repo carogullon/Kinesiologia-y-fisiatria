@@ -70,6 +70,14 @@
         line-height: 66px;
 	}
 }
+#finalizarCompra {
+    display:flex;
+    justify-content: flex-end;
+    padding:1%;
+    font-family: $fuente;
+    border-style: none;
+    margin-left:85%;
+}
 
 /*estilos generales a- i etc*/
 img {
@@ -421,6 +429,26 @@ label {
     margin-left: 50%;
 }
 
+.has-float-label {
+    margin-left:5%;
+    margin-right:5%;
+
+}
+
+
+.panel-header__panel-header-sticky {
+    text-align: left;
+}
+.payment-brands {
+    display: flex;
+    flex-direction: row;
+    width:60px;
+    padding:5px;
+}
+#select-cuotas-dni {
+    display:flex;
+    flex-direction: row;
+}
 // Center & dribbble
 
 

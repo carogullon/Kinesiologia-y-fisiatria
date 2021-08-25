@@ -68,6 +68,14 @@
     height: 63px;
     line-height: 66px; } }
 
+#finalizarCompra {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+  font-family: "Montserrat", sans-serif;
+  border-style: none;
+  margin-left: 85%; }
+
 /*estilos generales a- i etc*/
 img {
   max-width: 100%; }
@@ -367,6 +375,23 @@ label {
 
 .inputsClass {
   margin-left: 50%; }
+
+.has-float-label {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.panel-header__panel-header-sticky {
+  text-align: left; }
+
+.payment-brands {
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+  padding: 5px; }
+
+#select-cuotas-dni {
+  display: flex;
+  flex-direction: row; }
 
 /* todo lo que esta en el pie */
 .separarTitulos {

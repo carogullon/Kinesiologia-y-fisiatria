@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="seccion de contacto donde el usuario puede interactuar con la kinesiologa, dejar preguntas o dudas e incluso elegir el servicio que desea realizar. tambien puede ver la ubicacion del consultorio">
+    <meta name="keywords" content="contacto, formulario, preguntas, respuetas, reserva, turno, ubicacion, dudas, resolver">
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Montserrat & display = swap" rel = "hoja de estilo ">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/whatsapp?style=brands">
+    <script src="https://kit.fontawesome.com/c8bfb8fcf1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/WhatsApp Image 2021-05-26 at 13.09.24.png">
+    <title>Checkout Carrito</title>
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=+5492494465819" class="btn-wsp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <header class="header"> 
+      <div class="header__container"> 
+          <!-- empieza menú de navegación-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="images/WhatsApp Image 2021-05-26 at 13.09.24.png" alt="logo" class="logo" width="60px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="servicios.html">Reeducación Postural Global</a></li>
+                          <li><a class="dropdown-item" href="servicios.html">Kinesiología Deportiva</a></li>
+                          <li><a class="dropdown-item" href="servicios.html">Mobility & Stretching</a></li>
+                      </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!--Termina el menú -->
+
+        <!-- empieza el titulo -->
+        <h1 class="header__name">Carolina Gullón</h1>
+        <h2 class="encabezado">Kinesiología <span class="fisiatria"> y Fisiatría</span></h2>   
+      </div>
+    </header> 
+
+
+    <section>
+        <form id="formularioCompra">
+            
+            <h4 style="text-align: left;">DATOS DE CONTACTO</h4>
+
+            <div id="form-row">
+                    <div class="form-group">
+                        <div class="has-float-label">
+                            <label class="input-label" id="label_contact.email" for="contact.email">Email</label>
+                            <input type="email" class="form-control" name="contact.email" value="" data-testid="email" autocomplete="shipping email" autocapitalize="on" placeholder=" " id="contact.email" aria-labelledby="label_contact.email">
+                        
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="has-float-label">
+                            <label class="input-label" id="label_shippingAddress.first_name" for="shippingAddress.first_name">Nombre</label>
+                            <input type="text" class="form-control" name="shippingAddress.first_name" data-testid="shipping_first_name" autocomplete="shipping given-name" placeholder=" " autocapitalize="on" id="shippingAddress.first_name" aria-labelledby="label_shippingAddress.first_name" value="">
+                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="has-float-label">
+                            <label class="input-label" id="label_shippingAddress.last_name" for="shippingAddress.last_name">Apellido</label>
+                            <input type="text" class="form-control" name="shippingAddress.last_name" data-testid="shipping_last_name" autocomplete="shipping family-name" placeholder=" " autocapitalize="on" id="shippingAddress.last_name" aria-labelledby="label_shippingAddress.last_name" value="">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="has-float-label">
+                            <label class="input-label" id="label_shippingAddress.phone" for="shippingAddress.phone">Teléfono</label>
+                            <input type="tel" class="form-control" name="shippingAddress.phone" data-testid="shipping_phone" autocomplete="shipping tel" placeholder=" " autocapitalize="on" id="shippingAddress.phone" aria-labelledby="label_shippingAddress.phone" value="">
+                            
+                        </div>
+                    </div><br>
+                    
+                    <div class="form-group">
+                        <div class="has-float-label">
+                            <label class="input-label" id="label_shippingAddress.address" for="shippingAddress.address">Calle</label>
+                            <input type="text" class="form-control" name="shippingAddress.address" data-testid="shipping_address" autocomplete="off" placeholder=" " autocapitalize="on" id="shippingAddress.address" aria-labelledby="label_shippingAddress.address" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="has-float-label">
+                            <label class="input-label" id="label_shippingAddress.number" for="shippingAddress.number">Número</label>
+                            <input type="text" class="form-control" name="shippingAddress.number" data-testid="shipping_address.number" autocomplete="off" placeholder=" " autocapitalize="on" id="shippingAddress.number" aria-labelledby="label_shippingAddress.number" value="">
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <div class="has-float-label">
+                            <label class="input-label" id="label_shippingAddress.city" for="shippingAddress.city">Ciudad</label>
+                            <input type="text" class="form-control" name="shippingAddress.city" data-testid="shipping_city" autocomplete="off" placeholder=" " autocapitalize="on" id="shippingAddress.city" aria-labelledby="label_shippingAddress.city" value="">
+                            
+                        </div>
+                    </div>
+            
+            </div>
+        </form>
+    </section><br><br>
+
+    <form>
+        <div class="panel panel-with-header">
+            <h3 class="panel-header__panel-header-sticky">MEDIO DE PAGO</h3>
+            <div class="radio-group m-top-quarter">
+                <div class="accordion-section-header-label">
+                    <div class="d-md-inline-block">Tarjeta de crédito y débito -  <span>Hasta 3 cuotas <strong>sin interés</strong>
+                    </span></div>
+                    <div class="payment-item-discount text-small-extra">
+                       
+                        <div class="radio payment-option active" role="button" id="radio-option-mercadopago_transparent_card" tabindex="0"></div>
+                        
+                    </div>
+                </div>
+                
+                  
+            </div>
+            <div class="radio-content payment-option-content">
+                <div class="checkout-method"><div class="input-creditcard">
+                    <div class="form-group"><div class="has-float-label">
+                        <label class="input-label" id="label_payment.creditCard.cardNumber" for="payment.creditCard.cardNumber">Número de tarjeta</label>
+                        <input type="tel" class="form-control inspectletIgnore" name="payment.creditCard.cardNumber" autocorrect="off" autocomplete="cc-number" placeholder=" " autocapitalize="on" id="payment.creditCard.cardNumber" aria-labelledby="label_payment.creditCard.cardNumber" value="">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row third-gutters">
+                <div class="form-group col-12 col-sm-6 col-md-5">
+                    <div class="has-float-label">
+                        <label class="input-label" id="label_payment.creditCard.cardHolderName" for="payment.creditCard.cardHolderName">Titular de tarjeta</label>
+                        <input type="text" class="form-control inspectletIgnore" name="payment.creditCard.cardHolderName" autocorrect="off" autocomplete="cc-name" placeholder=" " autocapitalize="on" id="payment.creditCard.cardHolderName" aria-labelledby="label_payment.creditCard.cardHolderName" value="">
+                        
+                    </div>
+                </div>
+                <div class="form-group col-12 col-sm-3 col-md-4">
+                    <div class="has-float-label">
+                        <label class="input-label" id="label_payment.creditCard.cardExpiration" for="payment.creditCard.cardExpiration">Vencimiento (MM/AA)</label>
+                        <input class="form-control inspectletIgnore" name="payment.creditCard.cardExpiration" autocorrect="off" autocomplete="cc-exp" type="tel" placeholder=" " autocapitalize="on" id="payment.creditCard.cardExpiration" aria-labelledby="label_payment.creditCard.cardExpiration" value="">
+                        
+                    </div>
+                </div>
+                <div class="form-group col-12 col-sm-3 col-md-3">
+                    <div class="has-float-label">
+                        <label class="input-label" id="label_payment.creditCard.cardCvv" for="payment.creditCard.cardCvv">CVV</label>
+                        <input type="tel" class="form-control inspectletIgnore" name="payment.creditCard.cardCvv" autocorrect="off" placeholder=" " autocomplete="on" autocapitalize="on" id="payment.creditCard.cardCvv" aria-labelledby="label_payment.creditCard.cardCvv" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="has-float-label-select-container">
+            <label class="select-label" for="payment.creditCard.cardInstallments">Cuotas</label>
+            <select id="payment.creditCard.cardInstallments" name="payment.creditCard.cardInstallments" class="form-control form-control-select" style="background-color: white;">
+               
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option disabled="" value="0">Para acceder a los valores de las cuotas, necesitás ingresar primero el número de tarjeta</option>
+            </select>
+    
+                    
+                    <div>
+                        <p class="m-bottom-half m-top-half">Tarjetas de crédito aceptadas por Mercado Pago:</p>
+                        <div class="payment-brands">
+                            <img alt="visa" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/visa.svg">
+                            <img alt="mastercard" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/mastercard.svg">
+                            <img alt="amex" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/amex.svg">
+                            <img alt="dinersclub" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/dinersclub.svg">
+                            <img alt="cabal" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/cabal.svg">
+                            <img alt="argencard" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/argencard.svg">
+                            <img alt="tarjeta-naranja" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/tarjeta-naranja.svg">
+                            <img alt="nativa" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/nativa.svg">
+                            <img alt="tarjeta-shopping" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/tarjeta-shopping.svg"><br>
+                            <img alt="cencosud" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/cencosud.svg">
+                            <img alt="pagofacil" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/pagofacil.svg">
+                            <img alt="rapipago" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/rapipago.svg">
+                            <img alt="cabaldebit" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/cabaldebit.svg">
+                            <img alt="visadebit" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/visadebit.svg">
+                            <img alt="maestro" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/maestro.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="panel panel-with-header">
+        <h3 id="header-title" class="panel-header__panel-header-sticky">Notas de pedido</h3>
+        <div class="form-group m-none">
+            <textarea  id= "textarea-pedido" class="form-control" name="note-text" aria-labelledby="header-title" rows="3">
+
+        </textarea>
+    </div><br>
+</div>
+    <div class="btn-right">
+        <button class="btn btn-light mx-auto" onclick="formularioUsuario(); return false" type="submit" value="enviar">Realizar pedido</button>
+    </div>
+    <div id="error"></div>
+</form>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/checkoutCarrito.js"></script>
+
+</body>
+</html>

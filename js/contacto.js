@@ -1,15 +1,4 @@
-/* desafio eventos
-let input1 = document.getElementById("nombre");
-let input2 = document.getElementById("apellido");
-let input3 = document.getElementById("mail");
-
-input1.onchange = () => {console.log("valorNombre")};
-input2.onchange = () => {console.log("valorApellido")};
-input3.onchange = () => {console.log("valorMail")};
-
-
-*/
-function tomarDato(parametros) {
+/*function tomarDato(parametros) {
 	let nombre = document.querySelector("#nombre").value
 	let apellido = document.querySelector("#apellido").value
 	let mail = document.querySelector("#mail").value
@@ -40,4 +29,4 @@ function tomarDato(parametros) {
 		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
 	}
 }
-
+*/

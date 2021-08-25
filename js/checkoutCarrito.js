@@ -26,9 +26,11 @@ function generarHTMLCarrito(objeto) {
 		                <td>${productosKine.precio}</td> 
 		                <td>${productosKine.cantidad}</td> 
 						<td>$ ${productosKine.cantidad*productosKine.precio}</td> 
+					
 		              </tr>`
 		})
 		html += `<tr><td>TOTAL</td><td></td><td></td><td></td><td id=\"total\" colspan=\"5\">$ ${sumarCarrito()}</td></tr></table>`
+		
 	return html
 
 }
@@ -45,22 +47,60 @@ function sumarCarrito () {
     return total
 }
 
+let btnCompra = document.getElementById("finalizarCompra");
+btnCompra.addEventListener("click", respuestaClick)
 
+function respuestaClick () {
+	let formularioCompra;
+	formularioCompra = formularioUsuario(datosCompra);
+} 
 
+function formularioUsuario(datosCompra) {
+	let nombreCompra = document.querySelector("#shippingAddress.first_name").value
+	let apellidoCompra = document.querySelector("#shippingAddress.last_name").value
+	let mailCompra = document.querySelector("#contact.email").value
+	let telefonoCompra = document.querySelector("#shippingAddress.phone").value
+	let direccionCompra = document.querySelector("#shippingAddress.address").value
+	let ciudadCompra = document.querySelector ("#shippingAddress.city").value
+	let numeroTarjeta = document.querySelector("#payment.creditCard.cardNumber").value
+	let titularTarjeta = document.querySelector("#payment.creditCard.cardHolderName").value
+	let vencimTarjeta = document.querySelector("#payment.creditCard.cardExpiration").value
+	let cvv = document.querySelector("#payment.creditCard.cardCvv").value
+	let cuotas = document.querySelector("#payment.creditCard.cardInstallments").value
+	let pedido = document.querySelector("#textarea-pedido").value
+	
+	console.log(nombreCompra,apellidoCompra, mailCompra, telefonoCompra, direccionCompra, ciudadCompra, numeroTarjeta, titularTarjeta, vencimTarjeta, cvv, cuotas, pedido);
 
-
-/*Esta ultima parte no la termine, mi idea es que si el usuario eligre finalizar compra aparezcla la opcion de pago
- (tarjeta, mercado pago, cuotas etc) y si elige cancelar compra se borre el carrito y vuelva a productos html */
-
-
-$("#finalizarCompra").prepend(`<select class="inputsClass">
-                        				<option value="SI" selected>Finalizar compra</option>
-                        				<option value="NO" selected>Cancelar compra</option>
-                   				</select>`);
-
-//Asociamos el evento change a todos los inputs
-$(".inputsClass").change(function (e) { 
-    console.log(e.target.value);
-    console.log(this.value);
-});
-
+	let error = document.querySelector("#error") 
+	
+	if (nombreCompra === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (apellidoCompra === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (mailCompra === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (ciudadCompra === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (numeroTarjeta === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (titularTarjeta === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (vencimTarjeta === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (cvv === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (cuotas === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+	if (pedido === "") {
+		error.innerHTML = `<p class="errorForm">Todos los campos son obligatorios</p>`
+	}
+}
