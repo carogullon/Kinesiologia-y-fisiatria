@@ -85,6 +85,8 @@
                         
                         </div>
                     </div>
+                    <div id="error-email"></div>
+
                     <div class="form-group">
                         <div class="has-float-label">
                             <label class="input-label" id="label_shippingAddress.first_name" for="shippingAddress.first_name">Nombre</label>
@@ -92,20 +94,26 @@
                             
                         </div>
                     </div>
+                    <div id="error-nombre"></div>
+
+
                     <div class="form-group">
                         <div class="has-float-label">
                             <label class="input-label" id="label_shippingAddress.last_name" for="shippingAddress.last_name">Apellido</label>
                             <input type="text" class="form-control" name="shippingAddress.last_name" data-testid="shipping_last_name" autocomplete="shipping family-name" placeholder=" " autocapitalize="on" id="shippingAddress.last_name" aria-labelledby="label_shippingAddress.last_name" value="">
-
                         </div>
                     </div>
+                    <div id="error-apellido"></div>
+
+
                     <div class="form-group">
                         <div class="has-float-label">
                             <label class="input-label" id="label_shippingAddress.phone" for="shippingAddress.phone">Teléfono</label>
-                            <input type="tel" class="form-control" name="shippingAddress.phone" data-testid="shipping_phone" autocomplete="shipping tel" placeholder=" " autocapitalize="on" id="shippingAddress.phone" aria-labelledby="label_shippingAddress.phone" value="">
-                            
+                            <input type="text" class="form-control" name="shippingAddress.phone" data-testid="shipping_phone" autocomplete="shipping tel" placeholder=" " autocapitalize="on" id="shippingAddress.phone" aria-labelledby="label_shippingAddress.phone" value="">
                         </div>
-                    </div><br>
+                    </div>
+                    <div id="error-phone"></div>
+
                     
                     <div class="form-group">
                         <div class="has-float-label">
@@ -113,13 +121,17 @@
                             <input type="text" class="form-control" name="shippingAddress.address" data-testid="shipping_address" autocomplete="off" placeholder=" " autocapitalize="on" id="shippingAddress.address" aria-labelledby="label_shippingAddress.address" value="">
                         </div>
                     </div>
+                    <div id="error-address"></div>
+
                     <div class="form-group">
                         <div class="has-float-label">
                             <label class="input-label" id="label_shippingAddress.number" for="shippingAddress.number">Número</label>
                             <input type="text" class="form-control" name="shippingAddress.number" data-testid="shipping_address.number" autocomplete="off" placeholder=" " autocapitalize="on" id="shippingAddress.number" aria-labelledby="label_shippingAddress.number" value="">
                         </div>
                     </div>
-                
+                    <div id="error-number"></div>
+
+
                     <div class="form-group">
                         <div class="has-float-label">
                             <label class="input-label" id="label_shippingAddress.city" for="shippingAddress.city">Ciudad</label>
@@ -127,6 +139,8 @@
                             
                         </div>
                     </div>
+                    <div id="error-city"></div>
+
             
             </div>
         </form>
@@ -156,6 +170,7 @@
                        
                     </div>
                 </div>
+                <div id="error-number-tarjeta"></div>
             </div>
             <div class="row third-gutters">
                 <div class="form-group col-12 col-sm-6 col-md-5">
@@ -165,6 +180,8 @@
                         
                     </div>
                 </div>
+                <div id="error-titular-tarjeta"></div>
+
                 <div class="form-group col-12 col-sm-3 col-md-4">
                     <div class="has-float-label">
                         <label class="input-label" id="label_payment.creditCard.cardExpiration" for="payment.creditCard.cardExpiration">Vencimiento (MM/AA)</label>
@@ -172,12 +189,14 @@
                         
                     </div>
                 </div>
+                <div id="error-card-expiration"></div>
                 <div class="form-group col-12 col-sm-3 col-md-3">
                     <div class="has-float-label">
                         <label class="input-label" id="label_payment.creditCard.cardCvv" for="payment.creditCard.cardCvv">CVV</label>
                         <input type="tel" class="form-control inspectletIgnore" name="payment.creditCard.cardCvv" autocorrect="off" placeholder=" " autocomplete="on" autocapitalize="on" id="payment.creditCard.cardCvv" aria-labelledby="label_payment.creditCard.cardCvv" value="">
                     </div>
                 </div>
+                <div id="error-card-cvv"></div>
             </div>
         </div>
     </div>
@@ -198,37 +217,28 @@
                         <div class="payment-brands">
                             <img alt="visa" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/visa.svg">
                             <img alt="mastercard" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/mastercard.svg">
-                            <img alt="amex" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/amex.svg">
-                            <img alt="dinersclub" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/dinersclub.svg">
-                            <img alt="cabal" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/cabal.svg">
-                            <img alt="argencard" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/argencard.svg">
-                            <img alt="tarjeta-naranja" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/tarjeta-naranja.svg">
-                            <img alt="nativa" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/nativa.svg">
-                            <img alt="tarjeta-shopping" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/tarjeta-shopping.svg"><br>
-                            <img alt="cencosud" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/cencosud.svg">
-                            <img alt="pagofacil" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/pagofacil.svg">
-                            <img alt="rapipago" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/rapipago.svg">
-                            <img alt="cabaldebit" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/cabaldebit.svg">
-                            <img alt="visadebit" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/visadebit.svg">
-                            <img alt="maestro" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/maestro.svg">
+                            <img alt="amex" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/amex.svg">                            <img alt="visadebit" src="https://d1zxmlch3z83cq.cloudfront.net/production/2.1.182/_next/server/static/img/brands/visadebit.svg">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="error-card-installments"></div>
     <div class="panel panel-with-header">
         <h3 id="header-title" class="panel-header__panel-header-sticky">Notas de pedido</h3>
         <div class="form-group m-none">
             <textarea  id= "textarea-pedido" class="form-control" name="note-text" aria-labelledby="header-title" rows="3">
 
         </textarea>
-    </div><br>
-</div>
-    <div class="btn-right">
-        <button class="btn btn-light mx-auto" onclick="formularioUsuario(); return false" type="submit" value="enviar">Realizar pedido</button>
+        <div id="error-pedido"></div>
     </div>
-    <div id="error"></div>
+    
+</div>
 </form>
+<div class="btn-right">
+    <button id="btn-realizarPedido" class="btn btn-light mx-auto">Realizar pedido</button>
+</div>
+
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/checkoutCarrito.js"></script>

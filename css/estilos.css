@@ -393,6 +393,10 @@ label {
   display: flex;
   flex-direction: row; }
 
+.errorFormEnvio {
+  color: red;
+  font-size: 15px; }
+
 /* todo lo que esta en el pie */
 .separarTitulos {
   margin: 0; }
