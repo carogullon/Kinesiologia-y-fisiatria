@@ -346,14 +346,14 @@ a.noves{
 .sectionTres {
     background-color: $gris-clarito;
 }
-#formulario {
+#formularioContacto {
     font-family: $fuente;
     color:$color-greyDos;
     margin-left: 15%;
     margin-right:20%;
 }
 @media (min-width:768px) {
-    #formulario {
+    #formularioContacto {
         width:70%; 
     }
 }

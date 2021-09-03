@@ -66,7 +66,7 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	ciudad: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	direccion: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	numero:  /^\d{7,14}$/, // 7 a 14 numeros.
+	numero:  /^([0-9])*$/,
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^[0-9]+$/,
 	tarjeta: /^[0-9]{15,16}|(([0-9]{4}\s){3}[0-9]{3,4})$/,// 16 digitos o de 4 en 4 separados por espacios.
@@ -136,21 +136,24 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	
-	if(campos.nombre && campos.email && campos.ciudad && campos.direccion && campos.telefono && campos.numero &&campos.tarjeta && terminos.checked ){
+
+	if(campos.nombre && campos.email && campos.ciudad && campos.direccion && campos.telefono && campos.numero &&campos.tarjeta && terminos.checked){
 		
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		console.log (nombre, email, direccion, ciudad, telefono, numero, tarjeta);
-		
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 		}, 5000);
-
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
 		});
-
+		let inputTags = document.getElementsByTagName("input");
+        console.log(inputTags.length);
+        for(i=0;i < inputTags.length;i++){
+            console.log(inputTags[i].value);
+		}
+		return true;
 	} else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+		document.getElementById('formulario__mensaje-error').classList.add('formulario__mensaje-activo');
 	}
+
 });

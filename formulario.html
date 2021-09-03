@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="icon" href="images/WhatsApp Image 2021-05-26 at 13.09.24.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+  
     
 
     <title>Formulario compra</title>
@@ -83,10 +83,10 @@
                 <label for="nombre" class="formulario__label">Nombre</label>
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ej:John Doe">
-                    <i class="formulario__validacion-estado" class="fas fa-times-circle"></i>
+                    <i class="formulario__validacion-estado" class="fas fa fa-times-circle"></i>
                    
                 </div>
-                <p class="formulario__input-error">El nombre no puede contener mas de 20 caracteres</p>
+                <p class="formulario__input-error">El nombre no puede contener mas de 20 caracteres, ni simbolos de expresión.</p>
             </div>
     
     
@@ -95,7 +95,7 @@
                 <label for="email" class="formulario__label">Email</label>
                 <div class="formulario__grupo-input">
                     <input type="email" class="formulario__input" name="email" id="email" placeholder="Ej: johndoe@correo.com">
-                    <i class="formulario__validacion-estado" class="fas fa-times-circle"></i>
+                    <i class="formulario__validacion-estado" class="fas fa fa-times-circle"></i>
                 </div>
                 <p class="formulario__input-error">El email solo puede contener letras, numeros, puntos y/o guiones</p>
 
@@ -125,10 +125,10 @@
             </div>
 
             <!--numero de casa !-->
-            <div class="formulario__grupo" id="grupo__num">
-                <label for="nombre" class="formulario__label">Número</label>
+            <div class="formulario__grupo" id="grupo__numero">
+                <label for="numero" class="formulario__label">Número</label>
                 <div class="formulario__grupo-input">
-                    <input type="number" class="formulario__input" name="num" id="num" placeholder="Ej:864">
+                    <input type="number" class="formulario__input" name="numero" id="numero" placeholder="Ej:864">
                     <i class="formulario__validacion-estado" class="fas fa-times-circle"></i>
                 </div>
                 <p class="formulario__input-error">Solo se aceptan numeros</p>
@@ -175,7 +175,7 @@
 
             </div>
 
-            <div class="formulario__mensaje" id="formulario__mensaje">
+            <div class="formulario__mensaje" id="formulario__mensaje-error">
                 <p>
                     <i class="fas fa-exclamation-triangle"></i>
                     <strong>ERROR: Porfavor rellene el mensaje correctamente </strong>

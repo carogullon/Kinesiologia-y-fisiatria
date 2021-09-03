@@ -308,14 +308,14 @@ a.noves {
 .sectionTres {
   background-color: #faf3ef; }
 
-#formulario {
+#formularioContacto {
   font-family: "Montserrat", sans-serif;
   color: #433e3f;
   margin-left: 15%;
   margin-right: 20%; }
 
 @media (min-width: 768px) {
-  #formulario {
+  #formularioContacto {
     width: 70%; } }
 
 .fuente-icono {
@@ -590,7 +590,7 @@ h4 .main__hijoFlex {
   background-color: #c0b7b1; }
   .contactoDos .listaContacto .fuente-iconoDos {
     font-size: 20px;
-    font-family: "Montserrat", sans-serif !important;
+    font-family: "Montserrat", sans-serif;
     color: white; }
 
 @media (min-width: 768px) {
