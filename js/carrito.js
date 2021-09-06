@@ -66,7 +66,7 @@ function agregarCarrito(id) {
 
 	//agrego al carrito
 
-	const producto = { //genero el objeto
+	const producto = { 
 		id: item[0].id,
 		nombre: item[0].nombre,
 	 	precio: item[0].precio,
